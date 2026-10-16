@@ -1,17 +1,21 @@
 /* 喵其林指南・加值互動
-   內容都已在 HTML 裡（給 AI 與搜尋引擎讀）；這支只負責篩選、追蹤、查詢、換算。 */
+   內容都已在 HTML 裡（給 AI 與搜尋引擎讀）；這支只負責篩選、查詢、換算。 */
 (function () {
   'use strict';
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function $(sel, root) { return (root || document).querySelector(sel); }
   function fmt(n) { return Number(n).toLocaleString('zh-TW'); }
   function store(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } }
+  /* 搜尋字用空白分成幾個詞，每個詞都要出現（順序不限），例：「法米納 魚」 */
+  function 詞(q) { return String(q || '').trim().toLowerCase().split(/\s+/).filter(Boolean); }
+  function 全中(text, q) { var t = String(text || '').toLowerCase(); return 詞(q).every(function (w) { return t.indexOf(w) >= 0; }); }
   function hl(text, q) {
-    var t = esc(text); if (!q) return t;
-    var qs = esc(q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    var t = esc(text), ws = 詞(q); if (!ws.length) return t;
+    var qs = ws.map(function (w) { return esc(w).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }).join('|');
     return t.replace(new RegExp('(' + qs + ')', 'ig'), '<mark>$1</mark>');
   }
   var main = document.getElementById('main');
+
 
   /* 停更提示：超過 14 天沒更新成功就明講 */
   var 最後 = window.PAW_STALE_FROM;
@@ -29,7 +33,7 @@
     var 更新 = function () {
       var q = ff.elements.q.value.trim().toLowerCase(), c = ff.elements.c.value, t = ff.elements.t.value, y = ff.elements.y.value, n = 0;
       cards.forEach(function (el) {
-        var ok = (!c || el.dataset.c === c) && (!t || el.dataset.t.split('|').indexOf(t) >= 0) && (!y || el.dataset.y === y) && (!q || el.dataset.q.indexOf(q) >= 0);
+        var ok = (!c || el.dataset.c === c) && (!t || el.dataset.t.split('|').indexOf(t) >= 0) && (!y || el.dataset.y === y) && (!q || 全中(el.dataset.q, q));
         el.hidden = !ok; if (ok) n++;
       });
       $('#fcount').textContent = '符合 ' + n + ' 筆（共 ' + cards.length + ' 筆）';
@@ -42,53 +46,74 @@
     更新();
   }
 
-  /* 追蹤我家的糧（清單只存在這台裝置） */
-  var trk = $('#track'), E = window.PAW_EVENTS || [];
-  function 比對(e, q) { q = q.toLowerCase(); return [e.品名, e.廠商, e.品牌, e.原因, e.機關].join(' ').toLowerCase().indexOf(q) >= 0; }
-  if (trk && E.length) {
-    var box = document.createElement('div'); trk.appendChild(box);
-    var 畫 = function () {
-      var list = store('paw-track') || [], hits = [];
-      list.forEach(function (k) { E.forEach(function (e) { if (比對(e, k) && hits.indexOf(e) < 0) hits.push(e); }); });
-      box.innerHTML = '<form id="trk-f" class="big-search"><input type="text" id="trk-i" placeholder="例如：Quest、吶一口、Mr." aria-label="要追蹤的品牌或品名"><button class="btn">加入追蹤</button></form>' +
-        '<div class="tags">' + list.map(function (k, i) { return '<span class="tag">' + esc(k) + '<button type="button" data-rm="' + i + '" aria-label="移除 ' + esc(k) + '">×</button></span>'; }).join('') + '</div>' +
-        (list.length ? (hits.length
-          ? '<p><strong>找到 ' + hits.length + ' 筆相關紀錄</strong>（以文字比對，請點進去確認是不是同一款、同一批號）</p><ul>' +
-            hits.map(function (e) { return '<li><a href="' + esc(e.路徑) + '">' + esc(e.日期) + '・' + esc(e.品名) + '</a>：' + esc(e.原因) + '</li>'; }).join('') + '</ul>'
-          : '<p>目前收錄的資料裡，<strong>沒有</strong>相符的紀錄。提醒：沒有紀錄不等於安全，只代表本站收錄的官方公告裡沒有出現。</p>') : '');
-      $('#trk-f').addEventListener('submit', function (ev) {
-        ev.preventDefault(); var v = $('#trk-i').value.trim(); if (!v) return;
-        var l = store('paw-track') || []; if (l.indexOf(v) < 0) l.push(v); store('paw-track', l); 畫();
-      });
-      box.querySelectorAll('[data-rm]').forEach(function (b) {
-        b.addEventListener('click', function () { var l = store('paw-track') || []; l.splice(+b.dataset.rm, 1); store('paw-track', l); 畫(); });
-      });
-    };
-    畫();
+  var E = window.PAW_EVENTS || [];
+
+  /* 首頁「我知道產品」：打字時先找營養建檔款與品牌，送出則到查一包（全部申報資料） */
+  var hq = $('#hq'), hsug = $('#hsug'), B = window.PAW_BRANDS || [], F = window.PAW_FOODS || [];
+  if (hq && hsug) {
+    hq.addEventListener('input', function () {
+      var q = hq.value.trim();
+      if (!q) { hsug.innerHTML = ''; return; }
+      /* 貓的狀況：打這些詞，帶到「搜貓飯」並幫忙勾好（元首 20261016 12:10 定）；只篩數字與品名，不代表適合 */
+      var 況 = [[/腎/, 'c', '低磷', '低磷（暫定門檻）'], [/胖|肥|減重|體重/, 'c', '低脂', '低脂（暫定門檻）'],
+        [/泌尿|尿/, 'c', '泌尿', '品名寫泌尿'], [/毛球|化毛|吐毛/, 'c', '毛球', '品名寫化毛或毛球'],
+        [/腸胃|軟便|拉肚子|消化|敏感|過敏|低敏/, 'c', '敏感', '品名寫腸胃、敏感或低敏'],
+        [/幼貓|小貓|kitten/i, 'a', '幼貓', '幼貓'], [/老貓|熟齡|高齡|老年|senior/i, 'a', '熟齡貓', '熟齡貓'], [/成貓|adult/i, 'a', '成貓', '成貓']];
+      var 中況 = 況.filter(function (r) { return r[0].test(q); });
+      var 參 = new URLSearchParams();
+      中況.forEach(function (r) { if (r[1] === 'a') 參.set('a', r[2]); else 參.append('c', r[2]); });
+      var 況區 = 中況.length ? '<p class="muted" style="margin:8px 0 4px">依貓的狀況找：</p><p style="margin:0"><a class="btn small ghost" href="/foods/?' + 參 + '">' + 中況.map(function (r) { return esc(r[3]); }).join('・') + ' → 看符合的貓飯</a></p><p class="muted" style="margin:4px 0 0">依數字或官方品名篩選，不代表適合你的貓。</p>' : '';
+      var fh = F.filter(function (f) { return 全中(f.n + ' ' + f.k, q); }).slice(0, 8);
+      /* 成分：比對前五項成分與申報原料（品名沒中的才列，避免重複） */
+      var ih = F.filter(function (f) { return fh.indexOf(f) < 0 && (全中(f.i5, q) || 全中(f.im, q)); }).slice(0, 8);
+      var bh = B.filter(function (b) { return 全中([b.n, b.en].concat(b.a).join(' '), q); }).slice(0, 6);
+      hsug.innerHTML = 況區 +
+        (fh.length ? '<p class="muted" style="margin:8px 0 4px">貓飯：</p><ul class="lrows">' + fh.map(function (f) { return '<li class="lrow"><a href="' + esc(f.u) + '">' + hl(f.n, q) + '</a><span class="muted">' + esc(f.b) + '</span></li>'; }).join('') + '</ul>' : '') +
+        (ih.length ? '<p class="muted" style="margin:8px 0 4px">成分有寫「' + esc(q) + '」：</p><ul class="lrows">' + ih.map(function (f) { return '<li class="lrow"><a href="' + esc(f.u) + '">' + esc(f.n) + '</a><span class="muted">' + esc(f.b) + '・' + (全中(f.i5, q) ? '前五項成分' : '申報原料') + '</span></li>'; }).join('') + '</ul>' : '') +
+        (bh.length ? '<p class="muted" style="margin:8px 0 4px">品牌：</p><div class="pills">' + bh.map(function (b) { return '<a class="pill-link" href="' + esc(b.u) + '">' + esc(b.n) + '</a>'; }).join('') + '</div>' : '') +
+        (!fh.length && !bh.length && !ih.length && !中況.length ? '<p class="muted">營養建檔裡沒有符合的款。按 Enter 查台灣全部申報資料。</p>' : '');
+    });
+    /* 點旁邊或按 Esc 收起建議清單 */
+    document.addEventListener('click', function (ev) { if (!ev.target.closest('.top')) hsug.innerHTML = ''; });
+    hq.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') { hsug.innerHTML = ''; hq.blur(); } });
   }
 
-  /* 品牌頁：追蹤這個品牌 */
-  document.querySelectorAll('[data-track]').forEach(function (btn) {
-    var name = btn.dataset.track;
-    var 已 = function () { return (store('paw-track') || []).indexOf(name) >= 0; };
-    var 畫鈕 = function () { btn.textContent = 已() ? '已追蹤（到首頁看紀錄）' : '追蹤這個品牌'; };
-    btn.addEventListener('click', function () {
-      var l = store('paw-track') || [];
-      if (已()) l.splice(l.indexOf(name), 1); else l.push(name);
-      store('paw-track', l); 畫鈕();
-    });
-    畫鈕();
-  });
-
-  /* 首頁搜尋：打字時先提示品牌，送出則到查一包 */
-  var hq = $('#hq'), hsug = $('#hsug'), B = window.PAW_BRANDS || [];
-  if (hq && hsug && B.length) {
-    hq.addEventListener('input', function () {
-      var q = hq.value.trim().toLowerCase();
-      if (!q) { hsug.innerHTML = ''; return; }
-      var hits = B.filter(function (b) { return [b.n, b.en].concat(b.a).join(' ').toLowerCase().indexOf(q) >= 0; }).slice(0, 6);
-      hsug.innerHTML = hits.length ? '<span class="muted">品牌：</span>' + hits.map(function (b) { return '<a class="pill-link" href="' + esc(b.u) + '">' + esc(b.n) + '</a>'; }).join('') : '';
-    });
+  /* 首頁「我知道貓的狀況」：卡片都已在頁面上，這裡只篩選、排序 */
+  var cf2 = $('#cf2'), foods = $('#foods');
+  if (cf2 && foods) {
+    var fcards = Array.prototype.slice.call(foods.querySelectorAll('.food'));
+    var 篩 = function () {
+      var a = (cf2.querySelector('input[name=a]:checked') || {}).value || '';
+      var cs = Array.prototype.slice.call(cf2.querySelectorAll('input[name=c]:checked')).map(function (x) { return x.value; });
+      var s = cf2.elements.s.value, n = 0, 無齡 = 0;
+      fcards.forEach(function (el) {
+        var ages = el.dataset.age ? el.dataset.age.split(' ') : [], cc = el.dataset.c ? el.dataset.c.split(' ') : [];
+        var okA = !a || ages.indexOf(a) >= 0;
+        if (a && !ages.length) 無齡++;
+        var ok = okA && cs.every(function (c) { return cc.indexOf(c) >= 0; });
+        el.hidden = !ok; if (ok) n++;
+      });
+      var 鍵 = { p: ['p', 1], f: ['f', 1], cb: ['cb', 1], pr: ['pr', -1] }[s];
+      var 排 = fcards.slice().sort(function (x, y) {
+        if (!鍵) return 0;
+        var vx = x.dataset[鍵[0]], vy = y.dataset[鍵[0]];
+        if (vx === '' && vy === '') return 0; if (vx === '') return 1; if (vy === '') return -1;  /* 待補、未公開排最後（US-3） */
+        return (parseFloat(vx) - parseFloat(vy)) * 鍵[1];
+      });
+      if (鍵) 排.forEach(function (el) { foods.appendChild(el); });
+      $('#fc2').textContent = '符合 ' + n + ' 款（共 ' + fcards.length + ' 款）' + (無齡 ? '；另有 ' + 無齡 + ' 款官方品名沒寫適用年齡，沒有列入' : '');
+      $('#fe2').hidden = n > 0;
+    };
+    cf2.addEventListener('change', 篩);
+    /* 從搜尋框帶過來的條件（?a=幼貓&c=低磷） */
+    var 帶 = new URLSearchParams(location.search);
+    if (帶.get('a') || 帶.getAll('c').length) {
+      cf2.querySelectorAll('input').forEach(function (i) {
+        if (i.name === 'a') i.checked = i.value === (帶.get('a') || '');
+        if (i.name === 'c') i.checked = 帶.getAll('c').indexOf(i.value) >= 0;
+      });
+      篩();
+    }
   }
 
   /* 查一包（台灣申報資料，按需載入） */
@@ -121,14 +146,14 @@
           if (!d) { cell.textContent = '明細載入失敗。'; return; }
           cell.innerHTML = '<dl class="kv"><dt>適用寵物</dt><dd>' + esc(d[2]) + '</dd><dt>主要原料及添加物</dt><dd>' + esc(d[0]) + '</dd></dl>' +
             '<div class="orig" style="white-space:pre-wrap"><span class="muted">主要營養成分及含量（申報原文）：</span>\n' + esc(d[1]) + '</div>' +
-            '<div class="src"><a href="https://data.gov.tw/dataset/93696" rel="noopener">來源：農業部開放資料「寵物食品資料」↗</a><a href="/nutrition/">把數字換算成乾物比 →</a></div>';
+            '<div class="src"><a href="https://data.gov.tw/dataset/93696" rel="noopener">來源：農業部開放資料「寵物食品資料」↗</a><a href="/guide/calculator/">把數字換算成乾物比 →</a></div>';
         });
       };
       var 搜 = function () {
         var q = lq.value.trim().toLowerCase();
         history.replaceState(null, '', location.pathname + (q ? '?q=' + encodeURIComponent(q) : ''));
         if (!q) { $('#lcount').textContent = '請輸入關鍵字。'; $('#llist').innerHTML = ''; return; }
-        var r = R.列.filter(function (x) { return (x[1] + ' ' + x[5]).toLowerCase().indexOf(q) >= 0; });
+        var r = R.列.filter(function (x) { return 全中(x[1] + ' ' + x[5], q); });
         $('#lcount').textContent = '符合 ' + fmt(r.length) + ' 筆' + (r.length > 顯示數 ? '，先顯示前 ' + 顯示數 + ' 筆，請加關鍵字縮小範圍' : '');
         $('#llist').innerHTML = r.length ? '<div class="tbl-wrap"><table class="rtable"><thead><tr><th>品名</th><th>品項</th><th>來源</th><th>原產地</th><th>廠商</th><th></th></tr></thead><tbody>' +
           r.slice(0, 顯示數).map(function (x) {

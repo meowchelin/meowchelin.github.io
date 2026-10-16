@@ -24,32 +24,19 @@
 <header class="top">
   <div class="wrap top-in">
     <a class="logo" href="/" aria-label="喵其林指南首頁"><img src="/assets/logo-white.png" alt="喵其林指南" width="469" height="98"></a>
-    <nav class="nav" aria-label="主選單"><a href="/brands/">品牌</a><a href="/recalls/">食安快報</a><a href="/guide/">營養知識</a><a href="/lookup/">查一包</a><a href="/charity/">公益</a><a href="/about/">關於</a></nav>
+    <form class="hsearch" id="hs" role="search" action="/lookup/" method="get"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" id="hq" name="q" placeholder="搜品名、品牌、成分" aria-label="查產品、品牌、成分或貓的狀況" autocomplete="off"></form>
   </div>
+  <div class="wrap"><nav class="nav" aria-label="主選單"><a href="/" aria-current="page">查產品</a><a href="/brands/">問品牌</a><a href="/foods/">搜貓飯</a><a href="/recalls/">看食安</a><a href="/guide/calculator/">算營養</a></nav></div>
+  <div id="hsug" class="sug top-sug" aria-live="polite"></div>
   <div class="trust"><div class="wrap">只關注貓・不評分・不收飼料廠商任何費用・沒有紀錄不等於安全</div></div>
 </header>
 <main id="main" class="wrap" tabindex="-1">
 
-<section class="hero"><h1 class="kicker">把數字，<br><em>攤在陽光下。</em></h1>
+<section class="hero"><h1 class="kicker">把數字，<em>攤在陽光下。</em></h1>
+<p class="lead" style="font-size:18px"><strong>在最上面的搜尋框打字就能查</strong>：品名、品牌、成分，或貓的狀況。例如「農場盛宴」「Fit & Trim」「鴨肉」「腎」。</p>
+<p class="muted">打字時先找本站有營養建檔的 54 款；按 Enter 會到<a href="/lookup/">查一包</a>，查台灣全部 63,020 筆申報資料。</p>
 <p class="lead"><strong>貓的食安與營養，一個不賣飼料的地方。</strong>台灣官方的抽驗不合格公告、寵物食品申報資料和國際營養標準，附原文、不評分，也不收飼料廠商一毛錢。判斷留給妳。</p>
-<form class="big-search" id="hs" role="search" action="/lookup/" method="get"><input type="search" id="hq" name="q" placeholder="輸入品牌或產品，例如：法米納、鮪魚" aria-label="搜尋品牌或產品" autocomplete="off"><button class="btn">搜尋</button></form>
-<div id="hsug" class="sug" aria-live="polite"></div></section>
-<nav class="entries" aria-label="從這裡開始">
-<a class="entry" href="/brands/"><b>查品牌</b><span>20 個熱銷品牌的產地、申報與食安紀錄</span></a>
-<a class="entry" href="/recalls/"><b>食安快報</b><span>台灣官方檢驗不合格公告 36 筆</span></a>
-<a class="entry" href="/guide/"><b>營養知識</b><span>FEDIAF 標準、乾物比換算、法規</span></a></nav>
-<section class="track" id="track" aria-labelledby="trk-h"><h2 id="trk-h">追蹤我家的糧</h2>
-<p class="muted" style="margin:0">輸入妳家貓在吃的品牌或品名，只要台灣官方公告裡有相關的不合格紀錄，就會列在這裡。清單只存在這台裝置。</p>
-<noscript><p>這個功能需要開啟 JavaScript。也可以直接看 <a href="/recalls/tw/">全部食安快報</a>。</p></noscript></section>
-<h2>最新食安快報</h2><ul class="lrows"><li class="lrow"><a href="/recalls/tw/2026-09-02-1788315478826/"><span class="date">2026-09-02</span> 手切雞肉乾</a><span class="muted">沙門氏菌陽性</span></li><li class="lrow"><a href="/recalls/tw/2026-08-06-1786009278584/"><span class="date">2026-08-06</span> 【等等手作零食】關節大師（綠貽貝+葡萄糖胺）</a><span class="muted">沙門氏菌陽性</span></li><li class="lrow"><a href="/recalls/tw/2026-04-22-1776848482542/"><span class="date">2026-04-22</span> Chew me舒肥旗魚菲力</a><span class="muted">重金屬「砷」含量15.2mg/kg(ppm)</span></li><li class="lrow"><a href="/recalls/tw/2026-01-12-1768179817883/"><span class="date">2026-01-12</span> Mr.凍乾貓用天然原肉凍乾(180g)-牛肉</a><span class="muted">沙門氏桿菌陽性</span></li><li class="lrow"><a href="/recalls/tw/2026-01-09-1767956853192/"><span class="date">2026-01-09</span> Mr.MEAT 肉鮮生-凍乾主食-貓-牛肉</a><span class="muted">沙門氏桿菌 檢驗結果陽性</span></li></ul>
-<p class="more"><a class="btn ghost" href="/recalls/tw/">看全部 36 筆</a></p>
-<h2>熱銷品牌</h2><p class="muted">台灣品牌</p><div class="pills"><a class="pill-link" href="/brands/duo-na/">多納</a><a class="pill-link" href="/brands/fuso-pets/">福壽</a><a class="pill-link" href="/brands/toma-pro/">優格</a><a class="pill-link" href="/brands/tapazo/">特百滋</a><a class="pill-link" href="/brands/balance/">博朗氏</a><a class="pill-link" href="/brands/real-power/">瑞威</a><a class="pill-link" href="/brands/mao-hai-shi-dai/">毛孩時代</a><a class="pill-link" href="/brands/ge-li-si/">葛莉思</a><a class="pill-link" href="/brands/litomon/">怪獸部落</a><a class="pill-link" href="/brands/nai-ji-si/">耐吉斯</a></div><p class="muted">國外品牌</p><div class="pills"><a class="pill-link" href="/brands/royal-canin/">法國皇家</a><a class="pill-link" href="/brands/nutram/">紐頓</a><a class="pill-link" href="/brands/iq-cat/">IQ CAT</a><a class="pill-link" href="/brands/whiskas/">偉嘉</a><a class="pill-link" href="/brands/orijen/">歐睿健</a><a class="pill-link" href="/brands/farmina/">法米納</a><a class="pill-link" href="/brands/acana/">愛肯拿</a><a class="pill-link" href="/brands/pro-plan/">冠能</a><a class="pill-link" href="/brands/halo/">HALO 嘿囉</a><a class="pill-link" href="/brands/monge/">瑪恩吉</a></div>
-<div class="stats">
-<div class="stat"><b>20</b><span>個熱銷貓乾糧品牌</span></div>
-<div class="stat"><b>861</b><span>筆品牌乾糧申報資料</span></div>
-<div class="stat"><b>36</b><span>筆台灣貓食不合格紀錄</span></div>
-<div class="stat"><b>0</b><span>元飼料廠商收入</span></div></div>
-<p class="muted">截至 2026-10-16 09:05，本站收錄台灣官方公告中適用對象含貓的檢驗不合格紀錄 36 筆；20 個台灣電商熱銷貓乾糧品牌在農業部申報資料中的貓乾糧 861 筆（不含分裝）；以及全部適用對象含貓的申報資料 63,020 筆。</p>
+<p class="muted">截至 2026-10-16 09:05，本站有 <a href="/foods/">54 款貓乾糧的營養建檔</a>（39 款資料完整）、<a href="/brands/">20 個品牌</a>在農業部申報資料中的貓乾糧 877 筆（不含分裝），以及台灣官方公告中適用對象含貓的<a href="/recalls/tw/">檢驗不合格紀錄 36 筆</a>。</p></section>
 </main>
 <footer class="foot">
   <div class="wrap">
@@ -57,10 +44,12 @@
     <p><strong>把數字，攤在陽光下。</strong>貓的食安與營養，一個不賣飼料的地方。</p>
     <p>資料最後成功更新 <time datetime="2026-10-16T09:05+08:00">2026-10-16 09:05</time>（每天自動更新）・食安資料目前收錄台灣官方公告（其他國家之後加入）・<a href="/data/events.json">下載全部事件 JSON</a>・<a href="/data/events.csv">CSV</a></p>
     <p>本站整理官方公開資料，不是醫療建議；貓有狀況請諮詢獸醫師。本站內容未經獸醫審核。</p>
+    <nav class="foot-nav" aria-label="其他"><a href="/guide/">營養知識</a><a href="/charity/">公益</a><a href="/about/">關於我</a></nav>
   </div>
 </footer>
 <script>window.PAW_STALE_FROM="2026-10-16 09:05";</script>
-<script src="/data/meta.js"></script><script src="/data/events.js"></script><script src="/data/brands.js"></script>
+
+<script src="/data/brands.js"></script><script src="/data/foods.js"></script>
 <script src="/app.js"></script>
 </body>
 </html>
