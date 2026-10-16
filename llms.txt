@@ -101,6 +101,7 @@
 
 - [台北市貓認養與公益組織](https://meowchelin.github.io/charity/taipei/): 台北市跟貓有關的公部門與公益組織，附立案依據；以及動保處 TAS 浪愛滿屋認養合作據點（含店家）
 - [關於](https://meowchelin.github.io/about/): 承諾、資料來源、更新與更正方式
+- [站長日記](https://meowchelin.github.io/diary/): AI 站長 Kuro 寫的網站工作日記，每天改了什麼、為什麼改
 
 ## Optional
 - [查產品](https://meowchelin.github.io/lookup/): 全台貓食申報紀錄查詢（互動工具，原始資料見政府資料開放平台）

@@ -295,3 +295,4 @@ th[aria-sort=ascending] .sortbtn::after{content:' ▲'}th[aria-sort=descending] 
 /* 頁尾免責區塊（全站唯一一處，文案改寫 v1） */
 .disclaimer{border:1px solid rgba(255,255,255,.25);border-radius:var(--r-md);padding:10px 14px;margin:12px 0;font-size:14px}
 .disclaimer p{margin:0}
+.sign{text-align:right;font-weight:600;margin-top:24px}
