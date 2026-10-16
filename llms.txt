@@ -6,8 +6,8 @@
 
 ## 貓飯（產品）
 - [搜貓飯](https://meowchelin.github.io/): 54 款貓乾糧的乾物比（蛋白質、脂肪、碳水、磷），可依年齡與狀況篩選；數值抄自品牌官網，未經獸醫審核
-- [法國皇家 F32 理想體態成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-01/): ✎ 待補
-- [法國皇家 IN27 室內成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-02/): ✎ 待補
+- [法國皇家 F32 理想體態成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-01/): 資料不完整
+- [法國皇家 IN27 室內成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-02/): 資料不完整
 - [法國皇家 UC33 泌尿道保健成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-03/): 完整
 - [法國皇家 K36 幼貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-04/): 完整
 - [優格 零穀 5種魚 全年齡貓用 化毛配方（Grain Free Five Fish Formula）](https://meowchelin.github.io/brands/toma-pro/food-05/): 完整
@@ -22,11 +22,11 @@
 - [歐睿健 鮮雞愛貓](https://meowchelin.github.io/brands/orijen/food-14/): 完整
 - [歐睿健 六種魚](https://meowchelin.github.io/brands/orijen/food-15/): 完整
 - [歐睿健 室內貓](https://meowchelin.github.io/brands/orijen/food-16/): 完整
-- [HALO 嘿囉 無穀貓糧](https://meowchelin.github.io/brands/halo/food-17/): ✎ 待補
-- [瑪恩吉 瑪恩吉 天然全能 成貓泌尿保健配方(雞肉)](https://meowchelin.github.io/brands/monge/food-18/): ✎ 待補
-- [瑪恩吉 瑪恩吉 天然全能 幼貓配方(雞肉)](https://meowchelin.github.io/brands/monge/food-19/): ✎ 待補
-- [瑪恩吉 瑪恩吉 天然全能 成貓配方(雞肉)](https://meowchelin.github.io/brands/monge/food-20/): ✎ 待補
-- [瑪恩吉 瑪恩吉 天然全能 結紮貓配方(鱒魚)](https://meowchelin.github.io/brands/monge/food-21/): ✎ 待補
+- [HALO 嘿囉 無穀貓糧](https://meowchelin.github.io/brands/halo/food-17/): 資料不完整
+- [瑪恩吉 瑪恩吉 天然全能 成貓泌尿保健配方(雞肉)](https://meowchelin.github.io/brands/monge/food-18/): 資料不完整
+- [瑪恩吉 瑪恩吉 天然全能 幼貓配方(雞肉)](https://meowchelin.github.io/brands/monge/food-19/): 資料不完整
+- [瑪恩吉 瑪恩吉 天然全能 成貓配方(雞肉)](https://meowchelin.github.io/brands/monge/food-20/): 資料不完整
+- [瑪恩吉 瑪恩吉 天然全能 結紮貓配方(鱒魚)](https://meowchelin.github.io/brands/monge/food-21/): 資料不完整
 - [IQ CAT 聰明貓乾糧](https://meowchelin.github.io/brands/iq-cat/food-22/): 完整
 - [法米納 N&D天然頂級無穀系列-貓用 GC-1 幼貓/懷孕貓-雞肉石榴](https://meowchelin.github.io/brands/farmina/food-23/): 完整
 - [法米納 N&D天然頂級無穀系列-貓用 GC-2 全齡貓-雞肉石榴](https://meowchelin.github.io/brands/farmina/food-24/): 完整
@@ -41,16 +41,16 @@
 - [怪獸部落 貓用｜98%鮮肉主食糧（貓咪雞肉餐 Chicken Formula for Cats）](https://meowchelin.github.io/brands/litomon/food-33/): 完整
 - [怪獸部落 貓用｜98%鮮肉主食糧（貓咪竹筴魚餐 Mackerel Formula for Cats，標『新配方』）](https://meowchelin.github.io/brands/litomon/food-34/): 完整
 - [怪獸部落 貓用｜98%鮮肉主食糧（貓咪鮭魚餐 Salmon Formula for Cats）](https://meowchelin.github.io/brands/litomon/food-35/): 完整
-- [偉嘉 貓乾糧](https://meowchelin.github.io/brands/whiskas/food-36/): ✎ 待補
+- [偉嘉 貓乾糧](https://meowchelin.github.io/brands/whiskas/food-36/): 資料不完整
 - [瑞威 貓糧 2號 森林燉雞 腸胃健康配方 4kg](https://meowchelin.github.io/brands/real-power/food-37/): 完整
-- [冠能 冠能舒敏成貓鮮雞活力配方](https://meowchelin.github.io/brands/pro-plan/food-38/): ✎ 待補
-- [冠能 冠能舒敏成貓鮮鮭配方](https://meowchelin.github.io/brands/pro-plan/food-39/): ✎ 待補
-- [冠能 冠能成貓鮮雞活力配方](https://meowchelin.github.io/brands/pro-plan/food-40/): ✎ 待補
-- [冠能 冠能成貓挑嘴鮮鮭活力配方](https://meowchelin.github.io/brands/pro-plan/food-41/): ✎ 待補
+- [冠能 冠能舒敏成貓鮮雞活力配方](https://meowchelin.github.io/brands/pro-plan/food-38/): 資料不完整
+- [冠能 冠能舒敏成貓鮮鮭配方](https://meowchelin.github.io/brands/pro-plan/food-39/): 資料不完整
+- [冠能 冠能成貓鮮雞活力配方](https://meowchelin.github.io/brands/pro-plan/food-40/): 資料不完整
+- [冠能 冠能成貓挑嘴鮮鮭活力配方](https://meowchelin.github.io/brands/pro-plan/food-41/): 資料不完整
 - [福壽 【FUSO pets】福壽貓食 鮪魚+雞肉口味 1.5kg | 9.07kg(20磅)](https://meowchelin.github.io/brands/fuso-pets/food-42/): 完整
 - [福壽 【FUSO pets】福壽貓食 鮪魚+蟹肉口味 1.5kg | 9.07kg(20磅)](https://meowchelin.github.io/brands/fuso-pets/food-43/): 完整
 - [福壽 FUSO PETS貓食-鮭魚+牛肉口味（農業部申報品名）](https://meowchelin.github.io/brands/fuso-pets/food-44/): 完整
-- [福壽 喵喵貓乾糧 海洋總匯](https://meowchelin.github.io/brands/fuso-pets/food-45/): ✎ 待補
+- [福壽 喵喵貓乾糧 海洋總匯](https://meowchelin.github.io/brands/fuso-pets/food-45/): 資料不完整
 - [耐吉斯 E12 能量鮭魚餐-全齡貓配方](https://meowchelin.github.io/brands/nai-ji-si/food-46/): 完整
 - [耐吉斯 E13 能量海陸餐-全齡貓配方](https://meowchelin.github.io/brands/nai-ji-si/food-47/): 完整
 - [耐吉斯 E14 好消化鮮雞餐-無穀全齡貓配方](https://meowchelin.github.io/brands/nai-ji-si/food-48/): 完整
@@ -58,8 +58,8 @@
 - [毛孩時代 【毛孩時代】7+熟齡貓 鮮雞肉低磷關節貓糧1.5kg/包(關節保健)](https://meowchelin.github.io/brands/mao-hai-shi-dai/food-50/): 完整
 - [博朗氏 博朗氏 美毛魚油天然寵糧 挑嘴貓【高適口性配方】（雞肉+鮪魚+鱈魚）](https://meowchelin.github.io/brands/balance/food-51/): 完整
 - [博朗氏 博朗氏 美毛魚油天然寵糧 幼母貓【活力護眼配方】（牛肉+鮪魚+卵磷脂）](https://meowchelin.github.io/brands/balance/food-52/): 完整
-- [紐頓 T22 無穀火雞+雞肉](https://meowchelin.github.io/brands/nutram/food-53/): ✎ 待補
-- [紐頓 T24](https://meowchelin.github.io/brands/nutram/food-54/): ✎ 待補
+- [紐頓 T22 無穀火雞+雞肉](https://meowchelin.github.io/brands/nutram/food-53/): 資料不完整
+- [紐頓 T24](https://meowchelin.github.io/brands/nutram/food-54/): 資料不完整
 
 ## 品牌
 - [貓乾糧品牌](https://meowchelin.github.io/brands/): 台灣電商常見的 20 個貓乾糧品牌（台灣 10、國外 10），不排名
