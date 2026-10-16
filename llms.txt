@@ -94,6 +94,8 @@
 
 ## 營養知識
 - [FEDIAF 2025 貓糧營養建議值](https://meowchelin.github.io/guide/standards/): 完整貓糧最低建議營養量（每 100 g 乾物）中文整理
+- [包裝營養標示怎麼看](https://meowchelin.github.io/guide/label/): 保證分析值、乾物比與碳水（NFE）的算法，引用 FEDIAF 原文
+- [貓糧裡的磷](https://meowchelin.github.io/guide/phosphorus/): FEDIAF 成貓磷建議值、鈣磷比與註腳 f 原文；本站低磷門檻的由來
 - [乾物比換算器](https://meowchelin.github.io/guide/calculator/): 算法與範例
 - [台灣寵物食品法規](https://meowchelin.github.io/guide/law/): 標示、申報規定與立法進度
 
