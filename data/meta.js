@@ -1,0 +1,1 @@
+window.PAW_META={"建置日":"2026-10-16","事件數":36,"台灣事件":36,"美國事件":0,"待覆核":0,"申報筆數":63020,"來源":{"台灣不合格":"https://petfood.moa.gov.tw/Web/Audit","台灣申報":"https://data.gov.tw/dataset/93696","FDA":"https://www.fda.gov/animal-veterinary/safety-health/recalls-withdrawals"},"抓取日":"2026-10-16","最後成功更新":"2026-10-16 09:05"};

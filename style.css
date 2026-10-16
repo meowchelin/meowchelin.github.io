@@ -1,0 +1,214 @@
+/* 喵其林指南・樣式
+   依《喵其林指南設計規範卡 26 張》2026.07 v2：手機優先；斷點 760 桌機表格／手機卡片；點擊區 ≥44px；
+   墨黑主文＋暖底；喵粉節制當強調；數據一律中性藍灰，絕不用紅綠暗示好壞；粗墨框＋硬陰影只用於品牌時刻。
+   MVP 僅亮版（PRD 20260723 定案）。
+   寫法：基本樣式＝手機；@media (min-width:761px) 才加桌機規則。 */
+:root{
+  --ink:#141010; --ink-soft:#3a3230; --paper:#ffffff; --cream:#fbf9f6; --cream-deep:#f3efe9;
+  --grey-50:#f6f4f3; --grey-100:#ece8e6; --grey-200:#ddd8d5; --grey-300:#c3bcb8; --grey-500:#726c69; --grey-700:#443e3c;
+  --pink-100:#fdeef5; --pink-200:#f7d3e3; --pink-500:#e7739e; --pink-600:#d24f80;
+  --blue-100:#e4f8ff; --blue-700:#0a7ba3;
+  --level-0:#eef1f4; --level-1:#d6dee6; --level-2:#aebfcc; --level-4:#4c6070;
+  --pending:#7c8792; --pending-bg:#eef0f2; --pending-border:#cfd5db;
+  --amber-200:#ffe9bf; --amber-500:#ef9f0f;
+  --bw:2.5px; --r-sm:8px; --r-md:14px; --r-lg:20px; --r-pill:999px;
+  --pop-sm:2px 2px 0 var(--ink); --pop:4px 4px 0 var(--ink);
+  --shadow-card:0 2px 0 var(--ink),0 10px 24px -14px rgba(20,16,16,.4);
+  --font-display:'Baloo 2','Noto Sans TC',system-ui,sans-serif;
+  --font-ui:'IBM Plex Sans','Noto Sans TC',system-ui,sans-serif;
+  --font-num:'IBM Plex Mono',ui-monospace,'Noto Sans TC',monospace;
+  --ease-out:cubic-bezier(.22,.61,.36,1);
+  --tap:44px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 16px/1.6 var(--font-ui)}
+a{color:var(--blue-700)} a:hover{color:var(--pink-600)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--paper);padding:8px 12px;z-index:9}
+:focus-visible{outline:3px solid var(--pink-500);outline-offset:2px;border-radius:6px}
+[hidden]{display:none!important}
+/* 獨立的文字連結（非段落內文）：點擊區撐到 44px */
+.tap{display:inline-flex;align-items:center;min-height:var(--tap)}
+
+/* 頁首：墨黑品牌帶 */
+.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:5}
+.top-in{display:flex;align-items:center;flex-wrap:wrap;gap:4px;padding-top:10px}
+.logo{display:flex;align-items:center;min-height:var(--tap);text-decoration:none}
+.logo img{height:28px;width:auto;display:block}
+.nav{display:flex;width:100%;padding-bottom:8px;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{padding:8px 8px;font-size:14px;border-radius:var(--r-pill);text-decoration:none;color:#fff;white-space:nowrap;min-height:var(--tap);display:flex;align-items:center;font-weight:600}
+.nav a:hover{background:rgba(255,255,255,.12);color:#fff}
+.nav a[aria-current="page"]{background:var(--pink-500);color:var(--ink)}
+.trust{background:var(--cream-deep);border-bottom:1px solid var(--grey-200);font-size:13px;color:var(--grey-700);padding:6px 0;text-align:center}
+
+main{padding:20px 16px 56px;outline:none}
+h1,h2,h3{font-family:var(--font-display);font-weight:900;line-height:1.22;letter-spacing:-.01em}
+h1{font-size:30px;margin:8px 0 12px;overflow-wrap:anywhere}
+h2{font-size:22px;margin:36px 0 12px;display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:3px;background:var(--ink);border-radius:2px}
+h3{font-size:18px;margin:0 0 6px;font-family:var(--font-ui);font-weight:700;letter-spacing:0;overflow-wrap:anywhere}
+.lead{color:var(--ink-soft);font-size:16px;max-width:46em}
+.muted{color:var(--grey-500);font-size:14px}
+
+/* 首頁主視覺：品牌時刻，可用粗框＋pop */
+.hero{background:var(--paper);border:var(--bw) solid var(--ink);border-radius:var(--r-lg);box-shadow:var(--pop);padding:22px 18px;margin:4px 4px 8px 0}
+.hero .kicker{font-family:var(--font-display);font-weight:900;font-size:34px;line-height:1.12;margin:0 0 12px}
+.hero .kicker em{font-style:normal;white-space:nowrap;background:linear-gradient(transparent 62%,var(--pink-200) 62%)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}
+.stat{background:var(--paper);border:1.5px solid var(--grey-200);border-radius:var(--r-md);padding:14px}
+.stat b{display:block;font-family:var(--font-num);font-size:24px;line-height:1.15;font-weight:600}
+.stat span{color:var(--grey-500);font-size:14px}
+.big-search{display:flex;flex-direction:column;gap:8px;margin:12px 0 4px}
+.big-search .btn{justify-content:center}
+
+/* 表單與按鈕 */
+input[type=search],input[type=text],input[type=number],select{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:2px solid var(--ink);border-radius:var(--r-md);padding:10px 12px;min-height:var(--tap);width:100%}
+input::placeholder{color:var(--grey-500)}
+.btn{font:inherit;font-weight:700;border:var(--bw) solid var(--ink);border-radius:var(--r-pill);padding:9px 20px;min-height:var(--tap);background:var(--pink-500);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;box-shadow:var(--pop-sm);white-space:nowrap}
+.btn:hover{color:var(--ink);background:var(--pink-600)}
+.btn:active{transform:translate(2px,2px);box-shadow:none}
+.btn.ghost{background:var(--paper)}
+.btn.ghost:hover{background:var(--pink-100)}
+.btn.small{padding:5px 14px;font-size:14px;border-width:2px}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.filters .f-q{grid-column:1/-1}
+label.lbl{display:block;font-size:13px;font-weight:600;color:var(--grey-700);margin-bottom:4px}
+
+/* 資料卡：粗墨框＋卡片陰影（不用 pop） */
+.cards{display:grid;gap:14px}
+.card{background:var(--paper);border:var(--bw) solid var(--ink);border-radius:var(--r-lg);padding:16px;box-shadow:var(--shadow-card)}
+.card-top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px;font-size:13px;color:var(--grey-500)}
+.card-top .date{font-family:var(--font-num)}
+.card h3 a{color:var(--ink);text-decoration:none;display:block;min-height:var(--tap)}
+.card h3 a:hover{color:var(--pink-600);text-decoration:underline}
+/* 標籤：一律中性，不用顏色暗示好壞 */
+.chip{display:inline-flex;align-items:center;border-radius:var(--r-pill);padding:1px 10px;font-size:13px;font-weight:600;line-height:1.7;border:1.5px solid var(--grey-300);background:var(--level-0);color:var(--ink-soft)}
+.chip.country{background:var(--blue-100);border-color:var(--blue-700);color:var(--blue-700)}
+.chip.pending{background:var(--pending-bg);border:1.5px dashed var(--pending-border);color:var(--pending)}
+a.chip{text-decoration:none;min-height:var(--tap)}
+.kv{display:grid;grid-template-columns:1fr;gap:0 12px;font-size:15px;margin:10px 0 0}
+.kv dt{color:var(--grey-500);margin-top:6px}.kv dd{margin:0;overflow-wrap:anywhere}
+.orig{background:var(--grey-50);border-left:4px solid var(--ink);border-radius:var(--r-sm);padding:8px 12px;font-size:15px;margin:8px 0 0;overflow-wrap:anywhere}
+.src{font-size:14px;margin-top:8px;display:flex;column-gap:12px;flex-wrap:wrap;align-items:center}
+.src a{display:inline-flex;align-items:center;min-height:var(--tap)}
+.empty{background:var(--paper);border:2px dashed var(--grey-300);border-radius:var(--r-lg);padding:24px;text-align:center;color:var(--ink-soft)}
+.note{background:var(--paper);border:2px solid var(--ink);border-left-width:8px;border-radius:var(--r-md);padding:12px 16px;margin:16px 0;font-size:15px}
+.note.warn{background:var(--amber-200);border-color:var(--ink)}
+.more{margin:20px 0;text-align:center}
+
+/* 表格：手機變卡片（每列一張，欄名用 data-label 帶出），桌機才是表格 */
+.tbl-wrap{border:var(--bw) solid var(--ink);border-radius:var(--r-lg);background:var(--paper);overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:15px}
+caption{text-align:left;padding:10px 14px;font-size:13px;color:var(--grey-500)}
+.rtable thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.rtable tr{display:block;padding:12px 14px;border-bottom:1px solid var(--grey-200)}
+.rtable tr:last-child{border-bottom:0}
+.rtable td{display:grid;grid-template-columns:7.5em 1fr;gap:8px;padding:3px 0;border:0;overflow-wrap:anywhere}
+.rtable td::before{content:attr(data-label);color:var(--grey-500);font-size:13px}
+.rtable td.main{display:block;font-weight:600}
+.rtable td.main::before{content:none}
+.rtable td.act::before{content:none}
+.rtable td.act{display:block;padding-top:6px}
+.rtable tr.detail{background:var(--grey-50)}
+.rtable tr.detail td{display:block}
+.rtable tr.detail td::before{content:none}
+td.n{font-family:var(--font-num);font-feature-settings:'tnum' 1}
+
+/* 換算器 */
+.calc{display:grid;grid-template-columns:1fr;gap:16px}
+.grid-in{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.res-row{display:flex;justify-content:space-between;gap:8px;padding:9px 0;border-bottom:1px solid var(--grey-100)}
+.res-row b{font-family:var(--font-num);font-feature-settings:'tnum' 1;white-space:nowrap}
+.cmp{font-size:13px;color:var(--grey-500)}
+
+/* 時間軸 */
+.tl{list-style:none;padding:0;margin:0;border-left:3px solid var(--ink)}
+.tl li{position:relative;padding:0 0 18px 20px}
+.tl li::before{content:"";position:absolute;left:-9px;top:7px;width:15px;height:15px;border-radius:50%;background:var(--pink-500);border:2.5px solid var(--ink)}
+.tl time{font-family:var(--font-num);font-weight:600}
+.tl a{display:inline-flex;align-items:center;min-height:var(--tap)}
+
+/* 追蹤我家的糧 */
+.track{background:var(--pink-100);border:var(--bw) solid var(--ink);border-radius:var(--r-lg);padding:16px;margin:24px 0}
+.track h2{margin-top:0}.track h2::after{display:none}
+.track li a{display:inline-block;min-height:var(--tap);padding-top:10px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.tag{background:var(--paper);border:2px solid var(--ink);border-radius:var(--r-pill);padding:0 2px 0 12px;display:inline-flex;align-items:center;gap:2px;font-weight:600}
+.tag button{border:0;background:none;color:var(--grey-700);cursor:pointer;min-width:var(--tap);min-height:var(--tap);font-size:18px}
+
+.foot{background:var(--ink);color:#d9d3d0;padding:24px 0 40px;font-size:14px}
+.foot strong{color:#fff}.foot a{color:var(--pink-200);display:inline-flex;align-items:center;min-height:var(--tap)}
+.foot img{height:24px;width:auto;display:block;margin-bottom:10px}
+mark{background:var(--pink-200);color:inherit;border-radius:3px;padding:0 2px}
+@media (prefers-reduced-motion:no-preference){.card,.btn{transition:transform 120ms var(--ease-out),box-shadow 120ms var(--ease-out),background 120ms}}
+
+/* ---------- 桌機（≥761px） ---------- */
+@media (min-width:761px){
+  .top-in{gap:16px;min-height:64px;padding-top:0;flex-wrap:nowrap}
+  .logo img{height:34px}
+  .nav{width:auto;margin-left:auto;padding-bottom:0;gap:4px}
+  .nav a{padding:8px 14px;font-size:16px}
+  main{padding:28px 16px 64px}
+  h1{font-size:42px}
+  h2{font-size:31px;margin-top:40px}
+  h3{font-size:19px}
+  .lead{font-size:17px}
+  .hero{padding:28px 24px}
+  .hero .kicker{font-size:56px;line-height:1.1}
+  .stats{grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}
+  .stat{padding:16px}.stat b{font-size:28px}
+  .big-search{flex-direction:row;flex-wrap:wrap}
+  .big-search input{flex:1 1 260px}
+  .filters{grid-template-columns:2fr 1fr 1fr 1fr}
+  .filters .f-q{grid-column:auto}
+  .card{padding:18px 20px}
+  .kv{grid-template-columns:7em 1fr;gap:2px 12px}
+  .kv dt{margin-top:0}
+  .calc{grid-template-columns:1fr 1fr;gap:20px}
+  .track{padding:18px 20px}
+  .tbl-wrap{overflow-x:auto}
+  .rtable thead{position:static;width:auto;height:auto;overflow:visible;clip:auto;display:table-header-group}
+  .rtable tr{display:table-row;padding:0}
+  .rtable td,.rtable td.main,.rtable td.act{display:table-cell;padding:10px 12px;border-bottom:1px solid var(--grey-100)}
+  .rtable td::before{content:none}
+  .rtable tr.detail td{display:table-cell}
+  th{background:var(--cream-deep);font-size:13px;color:var(--grey-700);white-space:nowrap;padding:10px 12px;text-align:left;border-bottom:1px solid var(--grey-100)}
+  td.n{text-align:right;white-space:nowrap}
+}
+
+/* 麵包屑 */
+.crumb ol{list-style:none;margin:0 0 4px;padding:0;display:flex;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--grey-500)}
+.crumb li{display:inline-flex;align-items:center;max-width:100%}
+.crumb li+li::before{content:"›";margin:0 6px;color:var(--grey-300)}
+.crumb a{display:inline-flex;align-items:center;min-height:var(--tap)}
+.crumb li[aria-current]{color:var(--ink-soft);overflow-wrap:anywhere;padding:10px 0}
+/* 入口卡 */
+.entries{display:grid;grid-template-columns:1fr;gap:10px;margin:20px 0}
+.entry{display:block;background:var(--paper);border:var(--bw) solid var(--ink);border-radius:var(--r-lg);padding:14px 16px;text-decoration:none;color:var(--ink);box-shadow:var(--pop-sm);min-height:var(--tap)}
+.entry b{display:block;font-family:var(--font-display);font-size:20px}
+.entry span{color:var(--grey-500);font-size:14px}
+a.entry:hover{background:var(--pink-100);color:var(--ink)}
+.entry.off{border-style:dashed;box-shadow:none;color:var(--grey-500)}
+/* 簡短列表 */
+.lrows{list-style:none;padding:0;margin:0;border-top:1px solid var(--grey-200)}
+.lrow{border-bottom:1px solid var(--grey-200);padding:4px 0}
+.lrow a{display:flex;flex-wrap:wrap;gap:0 8px;align-items:center;min-height:var(--tap);font-weight:600;color:var(--ink);text-decoration:none}
+.lrow a:hover{color:var(--pink-600)}
+.lrow .date{font-family:var(--font-num);font-weight:400;color:var(--grey-500);font-size:14px}
+.lrow>.muted{display:block;padding-bottom:6px}
+/* 品牌膠囊 */
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+.pill-link{display:inline-flex;align-items:center;min-height:var(--tap);padding:0 14px;border:2px solid var(--ink);border-radius:var(--r-pill);background:var(--paper);color:var(--ink);text-decoration:none;font-weight:600}
+.pill-link:hover{background:var(--pink-100);color:var(--ink)}
+/* 首頁搜尋提示 */
+.sug:empty{display:none}
+.sug{margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.orig.pre{white-space:pre-wrap}
+.facts{background:var(--paper);border:1.5px solid var(--grey-200);border-radius:var(--r-md);padding:8px 14px 12px}
+@media (min-width:761px){.entries{grid-template-columns:repeat(3,1fr)}}
+.pills.plain{list-style:none;padding:0}.pills.plain li{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border:1.5px solid var(--grey-300);border-radius:var(--r-pill);background:var(--paper)}
+.sortbtn{font:inherit;font-size:13px;font-weight:600;color:var(--grey-700);background:none;border:0;padding:0;min-height:var(--tap);cursor:pointer;text-align:left}
+th[aria-sort=ascending] .sortbtn::after{content:' ▲'}th[aria-sort=descending] .sortbtn::after{content:' ▼'}
