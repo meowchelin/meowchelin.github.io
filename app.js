@@ -62,7 +62,7 @@
       var 中況 = 況.filter(function (r) { return r[0].test(q); });
       var 參 = new URLSearchParams();
       中況.forEach(function (r) { if (r[1] === 'a') 參.set('a', r[2]); else 參.append('c', r[2]); });
-      var 況區 = 中況.length ? '<p class="muted" style="margin:8px 0 4px">依貓的狀況找：</p><p style="margin:0"><a class="btn small ghost" href="/foods/?' + 參 + '">' + 中況.map(function (r) { return esc(r[3]); }).join('・') + ' → 看符合的貓飯</a></p><p class="muted" style="margin:4px 0 0">依數字或官方品名篩選，不代表適合你的貓。</p>' : '';
+      var 況區 = 中況.length ? '<p class="muted" style="margin:8px 0 4px">依貓的狀況找：</p><p style="margin:0"><a class="btn small ghost" href="/?' + 參 + '">' + 中況.map(function (r) { return esc(r[3]); }).join('・') + ' → 看符合的貓飯</a></p><p class="muted" style="margin:4px 0 0">依數字或官方品名篩選，不代表適合你的貓。</p>' : '';
       var fh = F.filter(function (f) { return 全中(f.n + ' ' + f.k, q); }).slice(0, 8);
       /* 成分：比對前五項成分與申報原料（品名沒中的才列，避免重複） */
       var ih = F.filter(function (f) { return fh.indexOf(f) < 0 && (全中(f.i5, q) || 全中(f.im, q)); }).slice(0, 8);

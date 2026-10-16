@@ -5,7 +5,7 @@
 本站整理台灣官方公開資料，原文不改，每筆附來源網址；不評分、不推薦產品、不收飼料廠商任何費用。本站內容不是醫療建議，未經獸醫審核；「沒有紀錄」不等於安全。
 
 ## 貓飯（產品）
-- [找貓飯](https://meowchelin.github.io/): 54 款貓乾糧的乾物比（蛋白質、脂肪、碳水、磷），可依年齡與狀況篩選；數值抄自品牌官網，未經獸醫審核
+- [搜貓飯](https://meowchelin.github.io/): 54 款貓乾糧的乾物比（蛋白質、脂肪、碳水、磷），可依年齡與狀況篩選；數值抄自品牌官網，未經獸醫審核
 - [法國皇家 F32 理想體態成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-01/): ✎ 待補
 - [法國皇家 IN27 室內成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-02/): ✎ 待補
 - [法國皇家 UC33 泌尿道保健成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-03/): 完整
@@ -95,7 +95,7 @@
 - [台灣寵物食品法規](https://meowchelin.github.io/guide/law/): 標示、申報規定與立法進度
 
 - [台北市貓認養與公益組織](https://meowchelin.github.io/charity/taipei/): 台北市跟貓有關的公部門與公益組織，附立案依據；以及動保處 TAS 浪愛滿屋認養合作據點（含店家）
-- [關於我](https://meowchelin.github.io/about/): 承諾、資料來源、更新與更正方式
+- [關於](https://meowchelin.github.io/about/): 承諾、資料來源、更新與更正方式
 
 ## Optional
-- [查一包](https://meowchelin.github.io/lookup/): 台灣全部貓食申報資料查詢（互動工具，原始資料見政府資料開放平台）
+- [查產品](https://meowchelin.github.io/lookup/): 台灣全部貓食申報資料查詢（互動工具，原始資料見政府資料開放平台）

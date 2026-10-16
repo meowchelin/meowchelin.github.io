@@ -256,3 +256,15 @@ th[aria-sort=ascending] .sortbtn::after{content:' ▲'}th[aria-sort=descending] 
 .top .nav{padding-bottom:6px}
 @media (min-width:761px){.logo img{height:28px}.hsearch{max-width:560px}.top-sug{left:50%;right:auto;width:min(720px,100%);transform:translateX(-50%)}}
 @media (min-width:761px){.opts:has(.opt.two){display:grid;grid-template-columns:repeat(3,1fr)}.opt.two{width:auto}}
+
+/* 跑馬燈（元首 20261016 12:51）：最上面一條，滑過或聚焦時停；減少動態時改成可左右滑 */
+.ticker{background:var(--cream-deep);color:var(--ink);overflow:hidden;border-bottom:1px solid var(--grey-200);font-size:17px;font-weight:600}
+.ticker-track{display:flex;width:max-content;animation:ticker 45s linear infinite}
+.ticker:hover .ticker-track,.ticker:focus-within .ticker-track{animation-play-state:paused}
+.ticker ul{display:flex;list-style:none;margin:0;padding:0}
+.ticker li{display:flex;align-items:center;white-space:nowrap;padding:0 18px;min-height:56px;gap:36px}
+.ticker li::after{content:"";width:22px;height:22px;flex:none;background:url(/assets/kuro-icon.png) center/contain no-repeat;opacity:.85}
+.ticker a{color:var(--ink);text-decoration:none}
+.ticker a:hover{text-decoration:underline}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker{overflow-x:auto}.ticker-track{animation:none}.ticker ul[aria-hidden]{display:none}}
