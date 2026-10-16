@@ -263,8 +263,34 @@ th[aria-sort=ascending] .sortbtn::after{content:' ▲'}th[aria-sort=descending] 
 .ticker:hover .ticker-track,.ticker:focus-within .ticker-track{animation-play-state:paused}
 .ticker ul{display:flex;list-style:none;margin:0;padding:0}
 .ticker li{display:flex;align-items:center;white-space:nowrap;padding:0 18px;min-height:56px;gap:36px}
-.ticker li::after{content:"";width:22px;height:22px;flex:none;background:url(/assets/kuro-icon.png) center/contain no-repeat;opacity:.85}
+.ticker li::after{content:"";width:24px;height:24px;flex:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23141010' stroke-width='1.6' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M8 14.5c1 1.4 2.4 2.1 4 2.1s3-.7 4-2.1'/%3E%3Ccircle cx='9' cy='9.8' r='.6' fill='%23141010'/%3E%3Ccircle cx='15' cy='9.8' r='.6' fill='%23141010'/%3E%3C/svg%3E") center/contain no-repeat}
 .ticker a{color:var(--ink);text-decoration:none}
 .ticker a:hover{text-decoration:underline}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.ticker{overflow-x:auto}.ticker-track{animation:none}.ticker ul[aria-hidden]{display:none}}
+
+/* 比較表：手機也維持表格，可橫向捲動、第一欄固定（外部檢查 #14） */
+.tbl-wrap.scroll{overflow-x:auto}
+.wtable{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+.wtable th,.wtable td{padding:8px 10px;border-bottom:1px solid var(--grey-200);text-align:left;vertical-align:top}
+.wtable td.n{font-family:var(--font-num);white-space:nowrap}
+.wtable th:first-child,.wtable td:first-child{position:sticky;left:0;background:var(--paper);min-width:150px;max-width:180px;box-shadow:1px 0 0 var(--grey-200)}
+.wtable thead th{background:var(--cream-deep)}
+/* 跑馬燈連結點擊區 ≥44px（外部檢查 #9） */
+.ticker a,.ticker span{display:flex;align-items:center;min-height:56px}
+
+/* 搜貓飯篩選：一排可左右滑的小標籤（元首 20261016 13:2x 選，外部檢查 #8） */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.chiprow{display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px 8px;padding:2px 16px 6px}
+.chiprow::-webkit-scrollbar{display:none}
+.chiprow fieldset{margin:0;flex:none}
+.chiprow .opts{flex-wrap:nowrap}
+.chiprow .opt{white-space:nowrap;padding:6px 12px;font-size:15px}
+.chipsep{flex:none;width:2px;height:28px;background:var(--grey-300);border-radius:2px}
+.note.fold summary{cursor:pointer;font-weight:700;min-height:var(--tap);display:flex;align-items:center}
+.note.fold ul{margin:4px 0 8px;padding-left:20px}
+@media (min-width:761px){.chiprow{flex-wrap:wrap;overflow:visible;margin:0 0 8px;padding:0}.chiprow .opts{flex-wrap:wrap}}
+
+/* 頁尾免責區塊（全站唯一一處，文案改寫 v1） */
+.disclaimer{border:1px solid rgba(255,255,255,.25);border-radius:var(--r-md);padding:10px 14px;margin:12px 0;font-size:14px}
+.disclaimer p{margin:0}

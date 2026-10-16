@@ -1,86 +1,86 @@
 # 喵其林指南（MeowChelin）
 
-> 貓的食安與營養，一個不賣飼料的地方。台灣官方的抽驗不合格公告、寵物食品申報資料和國際營養標準，附原文、不評分，也不收飼料廠商一毛錢。只關注貓。資料最後成功更新：2026-10-16 09:05（台北時間）。
+> 台灣貓糧的營養、申報與食安資料庫。整理 54 款熱銷貓乾糧的乾物比、全台 63,020 筆貓食申報紀錄，以及台灣官方的檢驗不合格公告。每筆資料附原始網址與核對日期；不打分數、不推薦產品，也不收飼料廠商的錢。資料最後更新：2026-10-16 09:05（台北時間）。
 
-本站整理台灣官方公開資料，原文不改，每筆附來源網址；不評分、不推薦產品、不收飼料廠商任何費用。本站內容不是醫療建議，未經獸醫審核；「沒有紀錄」不等於安全。
+引用須知：營養數字取自品牌官網並換算成乾物比，尚未經獸醫師審核，不是醫療建議。「沒有不合格紀錄」只代表我們收錄的官方公告中沒有出現，不代表產品安全。
 
 ## 貓飯（產品）
-- [搜貓飯](https://meowchelin.github.io/): 54 款貓乾糧的乾物比（蛋白質、脂肪、碳水、磷），可依年齡與狀況篩選；數值抄自品牌官網，未經獸醫審核
-- [法國皇家 F32 理想體態成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-01/): 資料不完整
-- [法國皇家 IN27 室內成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-02/): 資料不完整
-- [法國皇家 UC33 泌尿道保健成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-03/): 完整
-- [法國皇家 K36 幼貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-04/): 完整
-- [優格 零穀 5種魚 全年齡貓用 化毛配方（Grain Free Five Fish Formula）](https://meowchelin.github.io/brands/toma-pro/food-05/): 完整
-- [優格 零穀 室內貓體重管理 成貓用 低活動量體重管理配方（Grain Free Healthy Weight Indoor Formula）](https://meowchelin.github.io/brands/toma-pro/food-06/): 完整
-- [優格 零穀 鮭魚 全年齡貓用 敏感配方（Grain Free Salmon Formula）](https://meowchelin.github.io/brands/toma-pro/food-07/): 完整
-- [優格 零穀 低碳高蛋白 熟齡貓用 雞肉配方（Grain Free High Protein Formula）](https://meowchelin.github.io/brands/toma-pro/food-08/): 完整
-- [葛莉思 【葛莉思】貓食 海洋口味 8kg（GREENS葛莉思貓食_海洋口味）](https://meowchelin.github.io/brands/ge-li-si/food-09/): 完整
-- [葛莉思 【葛莉思】貓食 燻雞口味 8kg（GREENS葛莉思貓食／燻雞口味）](https://meowchelin.github.io/brands/ge-li-si/food-10/): 完整
-- [葛莉思 【葛莉思 CAT CARE】貓食 海洋口味 3.5kg | 7kg](https://meowchelin.github.io/brands/ge-li-si/food-11/): 完整
-- [葛莉思 【葛莉思 CAT CARE】貓食 鮪魚蟹肉 3.5kg | 7kg](https://meowchelin.github.io/brands/ge-li-si/food-12/): 完整
-- [特百滋 凍乾雙饗宴 低敏無穀貓糧](https://meowchelin.github.io/brands/tapazo/food-13/): 完整
-- [歐睿健 鮮雞愛貓](https://meowchelin.github.io/brands/orijen/food-14/): 完整
-- [歐睿健 六種魚](https://meowchelin.github.io/brands/orijen/food-15/): 完整
-- [歐睿健 室內貓](https://meowchelin.github.io/brands/orijen/food-16/): 完整
-- [HALO 嘿囉 無穀貓糧](https://meowchelin.github.io/brands/halo/food-17/): 資料不完整
-- [瑪恩吉 瑪恩吉 天然全能 成貓泌尿保健配方(雞肉)](https://meowchelin.github.io/brands/monge/food-18/): 資料不完整
-- [瑪恩吉 瑪恩吉 天然全能 幼貓配方(雞肉)](https://meowchelin.github.io/brands/monge/food-19/): 資料不完整
-- [瑪恩吉 瑪恩吉 天然全能 成貓配方(雞肉)](https://meowchelin.github.io/brands/monge/food-20/): 資料不完整
-- [瑪恩吉 瑪恩吉 天然全能 結紮貓配方(鱒魚)](https://meowchelin.github.io/brands/monge/food-21/): 資料不完整
-- [IQ CAT 聰明貓乾糧](https://meowchelin.github.io/brands/iq-cat/food-22/): 完整
-- [法米納 N&D天然頂級無穀系列-貓用 GC-1 幼貓/懷孕貓-雞肉石榴](https://meowchelin.github.io/brands/farmina/food-23/): 完整
-- [法米納 N&D天然頂級無穀系列-貓用 GC-2 全齡貓-雞肉石榴](https://meowchelin.github.io/brands/farmina/food-24/): 完整
-- [法米納 N&D天然頂級無穀系列-貓用 GC-3 全齡貓-羊肉藍莓](https://meowchelin.github.io/brands/farmina/food-25/): 完整
-- [法米納 N&D天然頂級無穀系列-貓用 GC-5 全齡貓-野豬蘋果](https://meowchelin.github.io/brands/farmina/food-26/): 完整
-- [多納 【多納】室內貓 (鮪魚+雞肉) 體重管理配方](https://meowchelin.github.io/brands/duo-na/food-27/): 完整
-- [多納 【多納】結紮貓 (海鮮+牛肉) 泌尿道保健配方](https://meowchelin.github.io/brands/duo-na/food-28/): 完整
-- [愛肯拿 農場盛宴 放養雞肉+蔓越莓](https://meowchelin.github.io/brands/acana/food-29/): 完整
-- [愛肯拿 田園收穫](https://meowchelin.github.io/brands/acana/food-30/): 完整
-- [愛肯拿 豐盛漁獲](https://meowchelin.github.io/brands/acana/food-31/): 完整
-- [愛肯拿 室內開胃](https://meowchelin.github.io/brands/acana/food-32/): 完整
-- [怪獸部落 貓用｜98%鮮肉主食糧（貓咪雞肉餐 Chicken Formula for Cats）](https://meowchelin.github.io/brands/litomon/food-33/): 完整
-- [怪獸部落 貓用｜98%鮮肉主食糧（貓咪竹筴魚餐 Mackerel Formula for Cats，標『新配方』）](https://meowchelin.github.io/brands/litomon/food-34/): 完整
-- [怪獸部落 貓用｜98%鮮肉主食糧（貓咪鮭魚餐 Salmon Formula for Cats）](https://meowchelin.github.io/brands/litomon/food-35/): 完整
-- [偉嘉 貓乾糧](https://meowchelin.github.io/brands/whiskas/food-36/): 資料不完整
-- [瑞威 貓糧 2號 森林燉雞 腸胃健康配方 4kg](https://meowchelin.github.io/brands/real-power/food-37/): 完整
-- [冠能 冠能舒敏成貓鮮雞活力配方](https://meowchelin.github.io/brands/pro-plan/food-38/): 資料不完整
-- [冠能 冠能舒敏成貓鮮鮭配方](https://meowchelin.github.io/brands/pro-plan/food-39/): 資料不完整
-- [冠能 冠能成貓鮮雞活力配方](https://meowchelin.github.io/brands/pro-plan/food-40/): 資料不完整
-- [冠能 冠能成貓挑嘴鮮鮭活力配方](https://meowchelin.github.io/brands/pro-plan/food-41/): 資料不完整
-- [福壽 【FUSO pets】福壽貓食 鮪魚+雞肉口味 1.5kg | 9.07kg(20磅)](https://meowchelin.github.io/brands/fuso-pets/food-42/): 完整
-- [福壽 【FUSO pets】福壽貓食 鮪魚+蟹肉口味 1.5kg | 9.07kg(20磅)](https://meowchelin.github.io/brands/fuso-pets/food-43/): 完整
-- [福壽 FUSO PETS貓食-鮭魚+牛肉口味（農業部申報品名）](https://meowchelin.github.io/brands/fuso-pets/food-44/): 完整
-- [福壽 喵喵貓乾糧 海洋總匯](https://meowchelin.github.io/brands/fuso-pets/food-45/): 資料不完整
-- [耐吉斯 E12 能量鮭魚餐-全齡貓配方](https://meowchelin.github.io/brands/nai-ji-si/food-46/): 完整
-- [耐吉斯 E13 能量海陸餐-全齡貓配方](https://meowchelin.github.io/brands/nai-ji-si/food-47/): 完整
-- [耐吉斯 E14 好消化鮮雞餐-無穀全齡貓配方](https://meowchelin.github.io/brands/nai-ji-si/food-48/): 完整
-- [毛孩時代 【毛孩時代】85%鮮雞肉無穀全貓糧1.5kg/包(腸胃保健)](https://meowchelin.github.io/brands/mao-hai-shi-dai/food-49/): 完整
-- [毛孩時代 【毛孩時代】7+熟齡貓 鮮雞肉低磷關節貓糧1.5kg/包(關節保健)](https://meowchelin.github.io/brands/mao-hai-shi-dai/food-50/): 完整
-- [博朗氏 博朗氏 美毛魚油天然寵糧 挑嘴貓【高適口性配方】（雞肉+鮪魚+鱈魚）](https://meowchelin.github.io/brands/balance/food-51/): 完整
-- [博朗氏 博朗氏 美毛魚油天然寵糧 幼母貓【活力護眼配方】（牛肉+鮪魚+卵磷脂）](https://meowchelin.github.io/brands/balance/food-52/): 完整
-- [紐頓 T22 無穀火雞+雞肉](https://meowchelin.github.io/brands/nutram/food-53/): 資料不完整
-- [紐頓 T24](https://meowchelin.github.io/brands/nutram/food-54/): 資料不完整
+- [搜貓飯](https://meowchelin.github.io/): 54 款貓乾糧的乾物比（蛋白質、脂肪、碳水、磷），可依年齡與狀況篩選；數字來自品牌官網，未經獸醫師審核
+- [法國皇家 F32 理想體態成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-01/): 品牌官網沒有列出水分，尚無乾物比
+- [法國皇家 IN27 室內成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-02/): 品牌官網沒有列出水分，尚無乾物比
+- [法國皇家 UC33 泌尿道保健成貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-03/): 乾物比蛋白質 34.92%、脂肪 13.76%、碳水（估算）39.15%、磷 品牌官網沒有列出
+- [法國皇家 K36 幼貓專用乾糧](https://meowchelin.github.io/brands/royal-canin/food-04/): 乾物比蛋白質 38.1%、脂肪 19.05%、碳水（估算）31.75%、磷 品牌官網沒有列出
+- [優格 零穀 5種魚 全年齡貓用 化毛配方（Grain Free Five Fish Formula）](https://meowchelin.github.io/brands/toma-pro/food-05/): 乾物比蛋白質 33.33%、脂肪 15.56%、碳水（估算）31.67%、磷 品牌官網沒有列出
+- [優格 零穀 室內貓體重管理 成貓用 低活動量體重管理配方（Grain Free Healthy Weight Indoor Formula）](https://meowchelin.github.io/brands/toma-pro/food-06/): 乾物比蛋白質 33.33%、脂肪 10%、碳水（估算）37.78%、磷 品牌官網沒有列出
+- [優格 零穀 鮭魚 全年齡貓用 敏感配方（Grain Free Salmon Formula）](https://meowchelin.github.io/brands/toma-pro/food-07/): 乾物比蛋白質 33.33%、脂肪 15.56%、碳水（估算）35.56%、磷 品牌官網沒有列出
+- [優格 零穀 低碳高蛋白 熟齡貓用 雞肉配方（Grain Free High Protein Formula）](https://meowchelin.github.io/brands/toma-pro/food-08/): 乾物比蛋白質 40%、脂肪 16.67%、碳水（估算）25.56%、磷 1.44%
+- [【葛莉思】貓食 海洋口味 8kg（GREENS葛莉思貓食_海洋口味）](https://meowchelin.github.io/brands/ge-li-si/food-09/): 乾物比蛋白質 33.33%、脂肪 13.33%、碳水（估算）41.67%、磷 0.89%
+- [【葛莉思】貓食 燻雞口味 8kg（GREENS葛莉思貓食／燻雞口味）](https://meowchelin.github.io/brands/ge-li-si/food-10/): 乾物比蛋白質 33.33%、脂肪 13.33%、碳水（估算）41.67%、磷 0.89%
+- [【葛莉思 CAT CARE】貓食 海洋口味 3.5kg | 7kg](https://meowchelin.github.io/brands/ge-li-si/food-11/): 乾物比蛋白質 33.33%、脂肪 13.33%、碳水（估算）37.78%、磷 品牌官網沒有列出
+- [【葛莉思 CAT CARE】貓食 鮪魚蟹肉 3.5kg | 7kg](https://meowchelin.github.io/brands/ge-li-si/food-12/): 乾物比蛋白質 33.33%、脂肪 13.33%、碳水（估算）38.89%、磷 0.89%
+- [特百滋 凍乾雙饗宴 低敏無穀貓糧](https://meowchelin.github.io/brands/tapazo/food-13/): 乾物比蛋白質 37.78%、脂肪 14.44%、碳水（估算）35%、磷 0.8%
+- [歐睿健 鮮雞愛貓](https://meowchelin.github.io/brands/orijen/food-14/): 乾物比蛋白質 44.44%、脂肪 22.22%、碳水（估算）21.11%、磷 1.22%
+- [歐睿健 六種魚](https://meowchelin.github.io/brands/orijen/food-15/): 乾物比蛋白質 44.44%、脂肪 21.11%、碳水（估算）21.11%、磷 1.33%
+- [歐睿健 室內貓](https://meowchelin.github.io/brands/orijen/food-16/): 乾物比蛋白質 46.67%、脂肪 16.67%、碳水（估算）18.89%、磷 1.22%
+- [HALO 無穀貓糧](https://meowchelin.github.io/brands/halo/food-17/): 品牌官網沒有列出灰分，尚無乾物比
+- [瑪恩吉 天然全能 成貓泌尿保健配方(雞肉)](https://meowchelin.github.io/brands/monge/food-18/): 品牌官網沒有列出水分，尚無乾物比
+- [瑪恩吉 天然全能 幼貓配方(雞肉)](https://meowchelin.github.io/brands/monge/food-19/): 品牌官網沒有列出水分，尚無乾物比
+- [瑪恩吉 天然全能 成貓配方(雞肉)](https://meowchelin.github.io/brands/monge/food-20/): 品牌官網沒有列出水分，尚無乾物比
+- [瑪恩吉 天然全能 結紮貓配方(鱒魚)](https://meowchelin.github.io/brands/monge/food-21/): 品牌官網沒有列出水分，尚無乾物比
+- [IQ 聰明貓乾糧](https://meowchelin.github.io/brands/iq-cat/food-22/): 乾物比蛋白質 30%、脂肪 10%、碳水（估算）45.56%、磷 0.56%
+- [法米納 N&D天然頂級無穀系列-貓用 GC-1 幼貓/懷孕貓-雞肉石榴](https://meowchelin.github.io/brands/farmina/food-23/): 乾物比蛋白質 47.83%、脂肪 21.74%、碳水（估算）19.24%、磷 0.98%
+- [法米納 N&D天然頂級無穀系列-貓用 GC-2 全齡貓-雞肉石榴](https://meowchelin.github.io/brands/farmina/food-24/): 乾物比蛋白質 47.83%、脂肪 21.74%、碳水（估算）19.24%、磷 0.98%
+- [法米納 N&D天然頂級無穀系列-貓用 GC-3 全齡貓-羊肉藍莓](https://meowchelin.github.io/brands/farmina/food-25/): 乾物比蛋白質 45.65%、脂肪 21.74%、碳水（估算）20.98%、磷 1.09%
+- [法米納 N&D天然頂級無穀系列-貓用 GC-5 全齡貓-野豬蘋果](https://meowchelin.github.io/brands/farmina/food-26/): 乾物比蛋白質 47.83%、脂肪 21.74%、碳水（估算）19.02%、磷 0.98%
+- [【多納】室內貓 (鮪魚+雞肉) 體重管理配方](https://meowchelin.github.io/brands/duo-na/food-27/): 乾物比蛋白質 33.33%、脂肪 11.11%、碳水（估算）40%、磷 1.11%
+- [【多納】結紮貓 (海鮮+牛肉) 泌尿道保健配方](https://meowchelin.github.io/brands/duo-na/food-28/): 乾物比蛋白質 32.22%、脂肪 11.11%、碳水（估算）42.22%、磷 1%
+- [愛肯拿 農場盛宴 放養雞肉+蔓越莓](https://meowchelin.github.io/brands/acana/food-29/): 乾物比蛋白質 41.11%、脂肪 20%、碳水（估算）25.56%、磷 1.33%
+- [愛肯拿 田園收穫](https://meowchelin.github.io/brands/acana/food-30/): 乾物比蛋白質 37.78%、脂肪 17.78%、碳水（估算）31.11%、磷 1.33%
+- [愛肯拿 豐盛漁獲](https://meowchelin.github.io/brands/acana/food-31/): 乾物比蛋白質 37.78%、脂肪 17.78%、碳水（估算）30%、磷 1.56%
+- [愛肯拿 室內開胃](https://meowchelin.github.io/brands/acana/food-32/): 乾物比蛋白質 41.11%、脂肪 15.56%、碳水（估算）26.67%、磷 1.11%
+- [怪獸部落 貓用｜98%鮮肉主食糧（貓咪雞肉餐 Chicken Formula for Cats）](https://meowchelin.github.io/brands/litomon/food-33/): 乾物比蛋白質 61.2%、脂肪 25.22%、碳水（估算）3.8%、磷 1.2%
+- [怪獸部落 貓用｜98%鮮肉主食糧（貓咪竹筴魚餐 Mackerel Formula for Cats，標『新配方』）](https://meowchelin.github.io/brands/litomon/food-34/): 乾物比蛋白質 60.98%、脂肪 26.3%、碳水（估算）4.02%、磷 0.98%
+- [怪獸部落 貓用｜98%鮮肉主食糧（貓咪鮭魚餐 Salmon Formula for Cats）](https://meowchelin.github.io/brands/litomon/food-35/): 乾物比蛋白質 58.26%、脂肪 26.3%、碳水（估算）5%、磷 0.98%
+- [偉嘉 貓乾糧](https://meowchelin.github.io/brands/whiskas/food-36/): 品牌官網上找不到這一款，尚無乾物比
+- [瑞威 貓糧 2號 森林燉雞 腸胃健康配方 4kg](https://meowchelin.github.io/brands/real-power/food-37/): 乾物比蛋白質 42.78%、脂肪 17.78%、碳水（估算）20%、磷 1%
+- [冠能舒敏成貓鮮雞活力配方](https://meowchelin.github.io/brands/pro-plan/food-38/): 品牌官網產品頁 2026-10-16 打不開，尚無乾物比
+- [冠能舒敏成貓鮮鮭配方](https://meowchelin.github.io/brands/pro-plan/food-39/): 品牌官網產品頁 2026-10-16 打不開，尚無乾物比
+- [冠能成貓鮮雞活力配方](https://meowchelin.github.io/brands/pro-plan/food-40/): 品牌官網產品頁 2026-10-16 打不開，尚無乾物比
+- [冠能成貓挑嘴鮮鮭活力配方](https://meowchelin.github.io/brands/pro-plan/food-41/): 品牌官網產品頁 2026-10-16 打不開，尚無乾物比
+- [【FUSO pets】福壽貓食 鮪魚+雞肉口味 1.5kg | 9.07kg(20磅)](https://meowchelin.github.io/brands/fuso-pets/food-42/): 乾物比蛋白質 35.56%、脂肪 13.33%、碳水（估算）36.67%、磷 0.89%
+- [【FUSO pets】福壽貓食 鮪魚+蟹肉口味 1.5kg | 9.07kg(20磅)](https://meowchelin.github.io/brands/fuso-pets/food-43/): 乾物比蛋白質 35.56%、脂肪 13.33%、碳水（估算）36.67%、磷 0.89%
+- [福壽 FUSO PETS貓食-鮭魚+牛肉口味](https://meowchelin.github.io/brands/fuso-pets/food-44/): 乾物比蛋白質 35.56%、脂肪 13.33%、碳水（估算）36.67%、磷 0.89%
+- [福壽 喵喵貓乾糧 海洋總匯](https://meowchelin.github.io/brands/fuso-pets/food-45/): 品牌官網上找不到這一款，尚無乾物比
+- [耐吉斯 E12 能量鮭魚餐-全齡貓配方](https://meowchelin.github.io/brands/nai-ji-si/food-46/): 乾物比蛋白質 46.67%、脂肪 20%、碳水（估算）20%、磷 0.89%
+- [耐吉斯 E13 能量海陸餐-全齡貓配方](https://meowchelin.github.io/brands/nai-ji-si/food-47/): 乾物比蛋白質 44.44%、脂肪 20%、碳水（估算）20.56%、磷 0.89%
+- [耐吉斯 E14 好消化鮮雞餐-無穀全齡貓配方](https://meowchelin.github.io/brands/nai-ji-si/food-48/): 乾物比蛋白質 44.44%、脂肪 20%、碳水（估算）18.33%、磷 0.89%
+- [【毛孩時代】85%鮮雞肉無穀全貓糧1.5kg/包(腸胃保健)](https://meowchelin.github.io/brands/mao-hai-shi-dai/food-49/): 乾物比蛋白質 52.17%、脂肪 18.48%、碳水（估算）13.04%、磷 0.91%
+- [【毛孩時代】7+熟齡貓 鮮雞肉低磷關節貓糧1.5kg/包(關節保健)](https://meowchelin.github.io/brands/mao-hai-shi-dai/food-50/): 乾物比蛋白質 40.22%、脂肪 18.48%、碳水（估算）27.17%、磷 0.88%
+- [博朗氏 美毛魚油天然寵糧 挑嘴貓【高適口性配方】（雞肉+鮪魚+鱈魚）](https://meowchelin.github.io/brands/balance/food-51/): 乾物比蛋白質 32.22%、脂肪 13.33%、碳水（估算）41.11%、磷 1%
+- [博朗氏 美毛魚油天然寵糧 幼母貓【活力護眼配方】（牛肉+鮪魚+卵磷脂）](https://meowchelin.github.io/brands/balance/food-52/): 乾物比蛋白質 33.33%、脂肪 15.56%、碳水（估算）37.78%、磷 1%
+- [紐頓 T22 無穀火雞+雞肉](https://meowchelin.github.io/brands/nutram/food-53/): 品牌官網沒有列出灰分，尚無乾物比
+- [紐頓 T24](https://meowchelin.github.io/brands/nutram/food-54/): 品牌官網沒有列出灰分，尚無乾物比
 
 ## 品牌
 - [貓乾糧品牌](https://meowchelin.github.io/brands/): 台灣電商常見的 20 個貓乾糧品牌（台灣 10、國外 10），不排名
 - [愛肯拿](https://meowchelin.github.io/brands/acana/): 國外品牌，Champion Petfoods，屬 Mars；申報貓乾糧 34 筆，申報產地 加拿大 34 筆
 - [博朗氏](https://meowchelin.github.io/brands/balance/): 台灣品牌，寶榮寵物企業；申報貓乾糧 10 筆，申報產地 台灣 10 筆
-- [法米納](https://meowchelin.github.io/brands/farmina/): 國外品牌，Farmina Pet Foods（義大利）；申報貓乾糧 75 筆，申報產地 義大利 73 筆、台灣 2 筆
+- [法米納](https://meowchelin.github.io/brands/farmina/): 國外品牌，Farmina Pet Foods（義大利）；申報貓乾糧 84 筆，申報產地 義大利 82 筆、台灣 2 筆
 - [福壽](https://meowchelin.github.io/brands/fuso-pets/): 台灣品牌，福壽實業；申報貓乾糧 25 筆，申報產地 台灣 25 筆
 - [HALO 嘿囉](https://meowchelin.github.io/brands/halo/): 國外品牌，美國本業屬 SRx Health Solutions；亞洲業務 2025 年售予 CZC Company；申報貓乾糧 10 筆，申報產地 美國 10 筆
 - [IQ CAT](https://meowchelin.github.io/brands/iq-cat/): 國外品牌，好侶 PCG 集團，卜蜂旗下（泰國）；申報貓乾糧 12 筆，申報產地 泰國 12 筆
-- [怪獸部落](https://meowchelin.github.io/brands/litomon/): 台灣品牌，怪獸製造有限公司；申報貓乾糧 0 筆，申報產地 申報資料中查無
+- [怪獸部落](https://meowchelin.github.io/brands/litomon/): 台灣品牌，怪獸製造有限公司；申報貓乾糧 44 筆，申報產地 台灣 36 筆、紐西蘭 8 筆
 - [瑪恩吉](https://meowchelin.github.io/brands/monge/): 國外品牌，Monge & C. S.p.A.（義大利）；申報貓乾糧 47 筆，申報產地 義大利 47 筆
-- [紐頓](https://meowchelin.github.io/brands/nutram/): 國外品牌，Elmira Pet Products（加拿大）；申報貓乾糧 36 筆，申報產地 加拿大 33 筆、台灣 3 筆
+- [紐頓](https://meowchelin.github.io/brands/nutram/): 國外品牌，Elmira Pet Products（加拿大）；申報貓乾糧 38 筆，申報產地 加拿大 35 筆、台灣 3 筆
 - [歐睿健](https://meowchelin.github.io/brands/orijen/): 國外品牌，Champion Petfoods，屬 Mars；申報貓乾糧 60 筆，申報產地 加拿大 58 筆、台灣 2 筆
 - [冠能](https://meowchelin.github.io/brands/pro-plan/): 國外品牌，Nestlé（瑞士）；申報貓乾糧 104 筆，申報產地 澳大利亞(澳洲) 54 筆、美國 47 筆
 - [瑞威](https://meowchelin.github.io/brands/real-power/): 台灣品牌，瑞威動物科技；申報貓乾糧 25 筆，申報產地 台灣 25 筆
-- [法國皇家](https://meowchelin.github.io/brands/royal-canin/): 國外品牌，Mars（美國）；品牌本部在法國；申報貓乾糧 214 筆，申報產地 法國 140 筆、韓國 56 筆
+- [法國皇家](https://meowchelin.github.io/brands/royal-canin/): 國外品牌，Mars（美國）；品牌本部在法國；申報貓乾糧 316 筆，申報產地 法國 227 筆、韓國 71 筆
 - [特百滋](https://meowchelin.github.io/brands/tapazo/): 台灣品牌，艾澌克 ISCO；申報貓乾糧 25 筆，申報產地 台灣 25 筆
 - [優格](https://meowchelin.github.io/brands/toma-pro/): 台灣品牌，艾澌克 ISCO；申報貓乾糧 55 筆，申報產地 美國 28 筆、加拿大 15 筆
 - [偉嘉](https://meowchelin.github.io/brands/whiskas/): 國外品牌，Mars（美國）；申報貓乾糧 61 筆，申報產地 泰國 61 筆
 - [多納](https://meowchelin.github.io/brands/duo-na/): 台灣品牌，寶榮寵物企業；申報貓乾糧 8 筆，申報產地 台灣 8 筆
-- [毛孩時代](https://meowchelin.github.io/brands/mao-hai-shi-dai/): 台灣品牌，騰勢股份有限公司；申報貓乾糧 1 筆，申報產地 台灣 1 筆
+- [毛孩時代](https://meowchelin.github.io/brands/mao-hai-shi-dai/): 台灣品牌，騰勢股份有限公司；申報貓乾糧 5 筆，申報產地 台灣 5 筆
 - [耐吉斯](https://meowchelin.github.io/brands/nai-ji-si/): 台灣品牌，艾澌克 ISCO；申報貓乾糧 56 筆，申報產地 美國 31 筆、台灣 18 筆
 - [葛莉思](https://meowchelin.github.io/brands/ge-li-si/): 台灣品牌，福壽實業；申報貓乾糧 19 筆，申報產地 台灣 19 筆
 
@@ -98,4 +98,4 @@
 - [關於](https://meowchelin.github.io/about/): 承諾、資料來源、更新與更正方式
 
 ## Optional
-- [查產品](https://meowchelin.github.io/lookup/): 台灣全部貓食申報資料查詢（互動工具，原始資料見政府資料開放平台）
+- [查產品](https://meowchelin.github.io/lookup/): 全台貓食申報紀錄查詢（互動工具，原始資料見政府資料開放平台）
