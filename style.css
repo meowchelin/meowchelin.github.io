@@ -134,6 +134,7 @@ td.n{font-family:var(--font-num);font-feature-settings:'tnum' 1}
 /* 追蹤我家的糧 */
 .track{background:var(--pink-100);border:var(--bw) solid var(--ink);border-radius:var(--r-lg);padding:16px;margin:24px 0}
 .track h2{margin-top:0}.track h2::after{display:none}
+.story h2{display:block}.story h2::after{display:none}
 .track li a{display:inline-block;min-height:var(--tap);padding-top:10px}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
 .tag{background:var(--paper);border:2px solid var(--ink);border-radius:var(--r-pill);padding:0 2px 0 12px;display:inline-flex;align-items:center;gap:2px;font-weight:600}

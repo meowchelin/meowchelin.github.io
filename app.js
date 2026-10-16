@@ -55,13 +55,13 @@
       var q = hq.value.trim();
       if (!q) { hsug.innerHTML = ''; return; }
       /* 貓的狀況：打這些詞，帶到「搜貓飯」並幫忙勾好（元首 20261016 12:10 定）；只篩數字與品名，不代表適合 */
-      var 況 = [[/腎|低磷/, 'c', '低磷', '磷 1% 以下（暫定門檻）'], [/胖|肥|減重|體重|低脂/, 'c', '低脂', '脂肪 16% 以下（暫定門檻）'],
+      var 況 = [[/腎|低磷|磷/, 's', 'p', '依磷由低到高排'], [/胖|肥|減重|體重|低脂/, 's', 'f', '依脂肪由低到高排'],  /* 元首 15:42 定：不標低磷、低脂，改帶到排序 */
         [/泌尿|尿/, 'c', '泌尿', '品名寫泌尿'], [/毛球|化毛|吐毛/, 'c', '毛球', '品名寫化毛或毛球'],
         [/腸胃|軟便|拉肚子|消化|敏感|過敏|低敏/, 'c', '敏感', '品名寫腸胃、敏感或低敏'],
         [/幼貓|小貓|kitten/i, 'a', '幼貓', '幼貓'], [/老貓|熟齡|高齡|老年|senior/i, 'a', '熟齡貓', '熟齡貓'], [/成貓|adult/i, 'a', '成貓', '成貓']];
       var 中況 = 況.filter(function (r) { return r[0].test(q); });
       var 參 = new URLSearchParams();
-      中況.forEach(function (r) { if (r[1] === 'a') 參.set('a', r[2]); else 參.append('c', r[2]); });
+      中況.forEach(function (r) { if (r[1] === 'a') 參.set('a', r[2]); else if (r[1] === 's') 參.set('s', r[2]); else 參.append('c', r[2]); });
       var 況區 = 中況.length ? '<p class="muted" style="margin:8px 0 4px">依狀況找：</p><p style="margin:0"><a class="btn small ghost" href="/?' + 參 + '">' + 中況.map(function (r) { return esc(r[3]); }).join('・') + ' 的貓飯 ›</a></p><p class="muted" style="margin:4px 0 0">只依數字或品名篩選，不代表適合你的貓。</p>' : '';
       var fh = F.filter(function (f) { return 全中(f.n + ' ' + f.k, q); }).slice(0, 8);
       /* 成分：比對前五項成分與申報原料（品名沒中的才列，避免重複） */
@@ -104,13 +104,14 @@
       $('#fc2').textContent = '共 ' + n + ' 款' + (無齡 ? '。另有 ' + 無齡 + ' 款品名沒寫年齡，沒有列入。' : '');
       $('#fe2').hidden = n > 0;
       /* 只勾一個有固定清單的條件時，給狀況頁網址（SEO 關鍵字計畫 v1） */
-      var 固 = { '低磷': ['/conditions/low-phosphorus/', '低磷貓乾糧清單'], '低脂': ['/conditions/low-fat/', '低脂貓乾糧清單'], '泌尿': ['/conditions/urinary/', '品名寫泌尿的貓乾糧清單'] }[cs.length === 1 && !a ? cs[0] : ''];
+      var 固 = { '泌尿': ['/conditions/urinary/', '品名寫泌尿的貓乾糧清單'] }[cs.length === 1 && !a ? cs[0] : ''];
       var fl = $('#fl2'); if (fl) { fl.hidden = !固; fl.innerHTML = 固 ? '這份清單的固定網址：<a href="' + 固[0] + '">' + 固[1] + '</a>' : ''; }
     };
     cf2.addEventListener('change', 篩);
-    /* 從搜尋框帶過來的條件（?a=幼貓&c=低磷） */
+    /* 從搜尋框帶過來的條件（?a=幼貓&c=泌尿&s=p） */
     var 帶 = new URLSearchParams(location.search);
-    if (帶.get('a') || 帶.getAll('c').length) {
+    if (帶.get('s') && cf2.elements.s.querySelector('option[value="' + 帶.get('s') + '"]')) cf2.elements.s.value = 帶.get('s');
+    if (帶.get('a') || 帶.getAll('c').length || 帶.get('s')) {
       cf2.querySelectorAll('input').forEach(function (i) {
         if (i.name === 'a') i.checked = i.value === (帶.get('a') || '');
         if (i.name === 'c') i.checked = 帶.getAll('c').indexOf(i.value) >= 0;
