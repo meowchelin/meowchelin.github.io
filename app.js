@@ -68,7 +68,7 @@
       var ih = F.filter(function (f) { return fh.indexOf(f) < 0 && (全中(f.i5, q) || 全中(f.im, q)); }).slice(0, 8);
       var bh = B.filter(function (b) { return 全中([b.n, b.en].concat(b.a).join(' '), q); }).slice(0, 6);
       hsug.innerHTML = 況區 +
-        (fh.length ? '<p class="muted" style="margin:8px 0 4px">貓飯：</p><ul class="lrows">' + fh.map(function (f) { return '<li class="lrow"><a href="' + esc(f.u) + '">' + hl(f.n, q) + '</a><span class="muted">' + esc(f.b) + '</span></li>'; }).join('') + '</ul>' : '') +
+        (fh.length ? '<p class="muted" style="margin:8px 0 4px">貓飯：</p><ul class="lrows">' + fh.map(function (f) { return '<li class="lrow"><a href="' + esc(f.u) + '"><span>' + hl(f.n, q) + '</span></a><span class="muted">' + esc(f.b) + '</span></li>'; }).join('') + '</ul>' : '') +
         (ih.length ? '<p class="muted" style="margin:8px 0 4px">成分有寫「' + esc(q) + '」：</p><ul class="lrows">' + ih.map(function (f) { return '<li class="lrow"><a href="' + esc(f.u) + '">' + esc(f.n) + '</a><span class="muted">' + esc(f.b) + '・' + (全中(f.i5, q) ? '前五項成分' : '申報原料') + '</span></li>'; }).join('') + '</ul>' : '') +
         (bh.length ? '<p class="muted" style="margin:8px 0 4px">品牌：</p><div class="pills">' + bh.map(function (b) { return '<a class="pill-link" href="' + esc(b.u) + '">' + esc(b.n) + '</a>'; }).join('') + '</div>' : '') +
         (!fh.length && !bh.length && !ih.length && !中況.length ? '<p class="muted">54 款裡沒有符合的。按 Enter，到全台 63,020 筆申報紀錄裡找。</p>' : '');
@@ -103,6 +103,9 @@
       if (鍵) 排.forEach(function (el) { foods.appendChild(el); });
       $('#fc2').textContent = '共 ' + n + ' 款' + (無齡 ? '。另有 ' + 無齡 + ' 款品名沒寫年齡，沒有列入。' : '');
       $('#fe2').hidden = n > 0;
+      /* 只勾一個有固定清單的條件時，給狀況頁網址（SEO 關鍵字計畫 v1） */
+      var 固 = { '低磷': ['/conditions/low-phosphorus/', '低磷貓乾糧清單'], '低脂': ['/conditions/low-fat/', '低脂貓乾糧清單'], '泌尿': ['/conditions/urinary/', '品名寫泌尿的貓乾糧清單'] }[cs.length === 1 && !a ? cs[0] : ''];
+      var fl = $('#fl2'); if (fl) { fl.hidden = !固; fl.innerHTML = 固 ? '這份清單的固定網址：<a href="' + 固[0] + '">' + 固[1] + '</a>' : ''; }
     };
     cf2.addEventListener('change', 篩);
     /* 從搜尋框帶過來的條件（?a=幼貓&c=低磷） */

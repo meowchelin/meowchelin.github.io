@@ -275,13 +275,13 @@ th[aria-sort=ascending] .sortbtn::after{content:' ▲'}th[aria-sort=descending] 
 .wtable th,.wtable td{padding:8px 10px;border-bottom:1px solid var(--grey-200);text-align:left;vertical-align:top}
 .wtable td.n{font-family:var(--font-num);white-space:nowrap}
 .wtable th:first-child,.wtable td:first-child{position:sticky;left:0;background:var(--paper);min-width:150px;max-width:180px;box-shadow:1px 0 0 var(--grey-200)}
-.wtable thead th{background:var(--cream-deep)}
+.wtable thead th{background:var(--cream-deep);vertical-align:middle}
 /* 跑馬燈連結點擊區 ≥44px（外部檢查 #9） */
 .ticker a,.ticker span{display:flex;align-items:center;min-height:56px}
 
 /* 搜貓飯篩選：一排可左右滑的小標籤（元首 20261016 13:2x 選，外部檢查 #8） */
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.chiprow{display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px 8px;padding:2px 16px 6px}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.chiprow{position:relative;display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px 8px;padding:2px 16px 6px}
 .chiprow::-webkit-scrollbar{display:none}
 .chiprow fieldset{margin:0;flex:none}
 .chiprow .opts{flex-wrap:nowrap}

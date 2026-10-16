@@ -60,6 +60,9 @@
 - [博朗氏 美毛魚油天然寵糧 幼母貓【活力護眼配方】（牛肉+鮪魚+卵磷脂）](https://meowchelin.github.io/brands/balance/food-52/): 乾物比蛋白質 33.33%、脂肪 15.56%、碳水（估算）37.78%、磷 1%
 - [紐頓 T22 無穀火雞+雞肉](https://meowchelin.github.io/brands/nutram/food-53/): 品牌官網沒有列出灰分，尚無乾物比
 - [紐頓 T24](https://meowchelin.github.io/brands/nutram/food-54/): 品牌官網沒有列出灰分，尚無乾物比
+- [低磷貓乾糧（磷 1% 以下，乾物比）](https://meowchelin.github.io/conditions/low-phosphorus/)
+- [低脂貓乾糧（脂肪 16% 以下，乾物比）](https://meowchelin.github.io/conditions/low-fat/)
+- [品名寫泌尿的貓乾糧](https://meowchelin.github.io/conditions/urinary/)
 
 ## 品牌
 - [貓乾糧品牌](https://meowchelin.github.io/brands/): 台灣電商常見的 20 個貓乾糧品牌（台灣 10、國外 10），不排名
@@ -90,7 +93,7 @@
 - [事件 CSV](https://meowchelin.github.io/data/events.csv): 同上，CSV 格式
 
 ## 營養知識
-- [FEDIAF 2024 貓糧營養建議值](https://meowchelin.github.io/guide/standards/): 完整貓糧最低建議營養量（每 100 g 乾物）中文整理
+- [FEDIAF 2025 貓糧營養建議值](https://meowchelin.github.io/guide/standards/): 完整貓糧最低建議營養量（每 100 g 乾物）中文整理
 - [乾物比換算器](https://meowchelin.github.io/guide/calculator/): 算法與範例
 - [台灣寵物食品法規](https://meowchelin.github.io/guide/law/): 標示、申報規定與立法進度
 

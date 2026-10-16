@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>關於喵其林指南：資料來源與更正方式｜喵其林指南</title>
-<meta name="description" content="喵其林指南的承諾、資料從哪裡來、怎麼保持正確，以及發現錯誤怎麼通知我們。">
+<meta name="description" content="喵其林指南由誰經營、資料從哪裡來、怎麼保持正確，以及發現錯誤怎麼通知我們。">
 <link rel="canonical" href="https://meowchelin.github.io/about/">
 <meta property="og:title" content="關於喵其林指南：資料來源與更正方式｜喵其林指南">
-<meta property="og:description" content="喵其林指南的承諾、資料從哪裡來、怎麼保持正確，以及發現錯誤怎麼通知我們。">
+<meta property="og:description" content="喵其林指南由誰經營、資料從哪裡來、怎麼保持正確，以及發現錯誤怎麼通知我們。">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="喵其林指南">
 <meta property="og:locale" content="zh_TW">
@@ -19,8 +19,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&family=Noto+Sans+TC:wght@400;600;700;900&display=swap">
-<link rel="stylesheet" href="/style.css?v=a6f8a9a2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "喵其林指南", "alternateName": "MeowChelin", "logo": "https://meowchelin.github.io/assets/kuro-icon.png", "url": "https://meowchelin.github.io/", "email": "meowchelintw@gmail.com", "contactPoint": {"@type": "ContactPoint", "contactType": "資料更正", "email": "meowchelintw@gmail.com"}}, {"@type": "AboutPage", "name": "關於喵其林指南", "url": "https://meowchelin.github.io/about/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "關於", "item": "https://meowchelin.github.io/about/"}]}]}</script>
+<link rel="stylesheet" href="/style.css?v=52f9db25">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "喵其林指南", "alternateName": "MeowChelin", "logo": "https://meowchelin.github.io/assets/kuro-icon.png", "url": "https://meowchelin.github.io/", "email": "meowchelintw@gmail.com", "contactPoint": {"@type": "ContactPoint", "contactType": "資料更正", "email": "meowchelintw@gmail.com"}, "parentOrganization": {"@type": "Organization", "name": "極光探索整合行銷有限公司", "alternateName": "Orora Marketing Co., Ltd.", "taxID": "93604461"}}, {"@type": "AboutPage", "name": "關於喵其林指南", "url": "https://meowchelin.github.io/about/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "關於", "item": "https://meowchelin.github.io/about/"}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
@@ -48,15 +48,16 @@
 <tr><td class="main">台灣申報紀錄</td><td data-label="來源"><a href="https://data.gov.tw/dataset/93696">政府資料開放平台・寵物食品資料</a>（政府資料開放授權條款 1.0）</td><td data-label="收錄範圍">寫明給貓吃的，63,020 筆</td></tr>
 <tr><td class="main">收錄品牌</td><td data-label="來源">momo、PChome、Yahoo 購物中心熱銷榜</td><td data-label="收錄範圍">2026-10-16 查看，20 個品牌；不排名，<a href="/brands/#rule">收錄說明</a></td></tr>
 <tr><td class="main">營養數字</td><td data-label="來源">各品牌官網產品頁</td><td data-label="收錄範圍">54 款熱銷貓乾糧，換算成乾物比</td></tr>
-<tr><td class="main">營養建議值</td><td data-label="來源"><a href="https://europeanpetfood.org/wp-content/uploads/2024/09/FEDIAF-Nutritional-Guidelines_2024.pdf">FEDIAF Nutritional Guidelines, July 2024</a></td><td data-label="收錄範圍">完整貓糧 Table III-4a</td></tr>
+<tr><td class="main">營養建議值</td><td data-label="來源"><a href="https://europeanpetfood.org/wp-content/uploads/2025/09/FEDIAF-Nutritional-Guidelines_2025.pdf">FEDIAF Nutritional Guidelines, September 2025</a></td><td data-label="收錄範圍">完整貓糧 Table III-4a</td></tr>
 </tbody></table></div>
 <p class="muted">食安卡片上的分類是我們依原文關鍵字加的，只用來篩選。全部食安紀錄可下載 <a href="/data/events.json">JSON</a>、<a href="/data/events.csv">CSV</a>。</p>
 <h2>怎麼保持正確</h2><ul>
-<li>每天自動抓農業部的最新資料，先檢查欄位和筆數，沒通過就沿用前一天的版本。</li>
-<li>品牌官網的營養數字，每一筆都抄錄兩次再比對，對不上的不放。</li>
-<li>新進的食安紀錄會先上架，標「新進，還在核對原始公告」，人工核對後拿掉標示。</li>
-<li>官方撤下的紀錄我們不刪，改標「官方清單已移除」和最後出現日期。</li>
-<li>超過 14 天沒更新成功，網站會直接告訴你。</li></ul>
+<li>申報和食安資料：每天自動從政府網站抓最新的。如果抓下來的筆數或格式不對，當天就不換，繼續用前一天的。</li>
+<li>營養數字：每一款都從品牌官網抄兩次，兩次一樣才放上來。</li>
+<li>新的食安公告：先放上來，標「新進，還在核對原始公告」；我們對過官方原文後，才拿掉這個標示。</li>
+<li>官方撤下的公告：我們不刪，改標「官方清單已移除」，並寫上最後一次出現的日期。</li>
+<li>網站如果超過 14 天沒更新成功，頁面上會直接寫出來。</li></ul>
+<h2>誰在經營</h2><p>喵其林指南由極光探索整合行銷有限公司（Orora Marketing Co., Ltd.，統一編號 93604461）經營。</p>
 <h2>發現錯誤</h2><p>寄信到 <a href="mailto:meowchelintw@gmail.com">meowchelintw@gmail.com</a>，附上官方或品牌的原始網址。確認後我們會更正，並公開留下更正紀錄。</p>
 <h2>統計工具</h2><p class="muted">我們只用不設 cookie、不追蹤個人的統計工具。</p>
 </main>
@@ -72,6 +73,6 @@
 <script>window.PAW_STALE_FROM="2026-10-16 09:05";</script>
 
 <script src="/data/brands.js?v=7c1bfc53"></script><script src="/data/foods.js?v=2e8e36d4"></script>
-<script src="/app.js?v=b52ad3ed"></script>
+<script src="/app.js?v=8e5406bd"></script>
 </body>
 </html>
