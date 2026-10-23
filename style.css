@@ -82,6 +82,8 @@ label.lbl{display:block;font-size:13px;font-weight:600;color:var(--grey-700);mar
 .card{background:var(--paper);border:var(--bw) solid var(--ink);border-radius:var(--r-lg);padding:16px;box-shadow:var(--shadow-card)}
 .card-top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px;font-size:13px;color:var(--grey-500)}
 .card-top .date{font-family:var(--font-num)}
+.card-top:empty{display:none}
+.card-note{margin:8px 0 0;font-size:12px;color:var(--grey-500)}
 .card h3 a{color:var(--ink);text-decoration:none;display:block;min-height:var(--tap)}
 .card h3 a:hover{color:var(--pink-600);text-decoration:underline}
 /* 標籤：一律中性，不用顏色暗示好壞 */
@@ -275,6 +277,7 @@ th[aria-sort=ascending] .sortbtn::after{content:' ▲'}th[aria-sort=descending] 
 .wtable{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
 .wtable th,.wtable td{padding:8px 10px;border-bottom:1px solid var(--grey-200);text-align:left;vertical-align:top}
 .wtable td.n{font-family:var(--font-num);white-space:nowrap}
+.wtable th:not(:first-child),.wtable td:not(:first-child){white-space:nowrap}  /* 20261016 16:5x 元首手機實測：「資料」欄被擠成 47px，「數字齊全」直排四行，每列變四行高 */
 .wtable th:first-child,.wtable td:first-child{position:sticky;left:0;background:var(--paper);min-width:150px;max-width:180px;box-shadow:1px 0 0 var(--grey-200)}
 .wtable thead th{background:var(--cream-deep);vertical-align:middle}
 /* 跑馬燈連結點擊區 ≥44px（外部檢查 #9） */
@@ -296,3 +299,59 @@ th[aria-sort=ascending] .sortbtn::after{content:' ▲'}th[aria-sort=descending] 
 .disclaimer{border:1px solid rgba(255,255,255,.25);border-radius:var(--r-md);padding:10px 14px;margin:12px 0;font-size:14px}
 .disclaimer p{margin:0}
 .sign{text-align:right;font-weight:600;margin-top:24px}
+
+/* 營養比較（Apple「比較 Mac 機型」的做法，20261019）：上方選糧、規格往下排、左右大數字對照、不用左右滑；手機 2 款、桌機 3 款 */
+.vs{margin:16px 0 8px}
+.vs-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.vs-cols>:nth-child(3){display:none}
+.vs-pick{position:sticky;top:var(--hdr,0px);z-index:3;background:var(--cream);padding:10px 0 12px;border-bottom:2px solid var(--ink)}
+.vs-col{display:flex;flex-direction:column;gap:4px;min-width:0}
+.vs-col select{width:100%;min-height:var(--tap);font-size:15px;padding:8px 10px;text-overflow:ellipsis}
+.vs-name{font-weight:700;color:var(--ink);line-height:1.35;font-size:15px;overflow-wrap:anywhere;min-height:var(--tap);display:block;padding-top:4px}
+.vs-name:hover{color:var(--pink-600)}
+.vs-brand{font-size:13px;color:var(--grey-500)}
+.vs-sec{margin-top:8px}
+h2.vs-h{font-size:22px;margin:28px 0 4px}
+.vs-sec>.muted{margin:0 0 4px}
+.vs-row{padding:14px 0;border-bottom:1px solid var(--grey-200)}
+.vs-lab{font-weight:700;font-size:15px;margin-bottom:6px}
+.vs-lab small{display:block;font-weight:400;font-size:12px;color:var(--grey-500)}
+.vs-v{font-size:15px;line-height:1.5;overflow-wrap:anywhere;min-width:0;color:var(--ink-soft)}
+.vs-v.num{font-family:var(--font-num);font-size:20px;font-weight:600;color:var(--ink)}
+.vs-v.big{font-size:30px;line-height:1.2}
+.vs-all{margin-top:28px}
+@media (min-width:761px){
+  .vs-cols{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .vs-cols>:nth-child(3){display:flex}
+  .vs-cols>.vs-v:nth-child(3){display:block}
+  .vs-v.big{font-size:40px}
+  .vs-v.num{font-size:22px}.vs-v.big.num{font-size:40px}
+  h2.vs-h{font-size:28px}
+}
+
+/* UX／UI 測試修正（20261023 測試手冊第四節） */
+/* P1-1 手機標籤列：維持一排左右滑，右邊加淡出遮罩與「左右滑看更多」；滑到底收起 */
+.chipwrap{position:relative;margin:0 -16px}
+.chipwrap .chiprow{margin:0}
+.chipwrap::after{content:"";position:absolute;top:0;right:0;bottom:6px;width:56px;pointer-events:none;background:linear-gradient(to right,rgba(251,249,246,0),var(--cream) 80%);transition:opacity .2s}
+.chipwrap.end::after{opacity:0}
+.swipe{margin:0 0 8px;text-align:right}
+.chipwrap.end+.swipe{visibility:hidden}
+@media (min-width:761px){.chipwrap{margin:0}.chipwrap .chiprow{margin:0 0 8px}.chipwrap::after,.swipe{display:none}}
+/* P1-6 篩選區旁直接看得到的提醒 */
+.pick-warn{margin:10px 0 0;font-size:15px;color:var(--ink-soft);background:var(--paper);border:1.5px solid var(--grey-200);border-radius:var(--r-sm);padding:6px 10px}
+.terms{max-width:46em}
+/* P2-10 查產品：「品項」標籤和選單包在一起 */
+.lt-wrap{display:flex;align-items:center;gap:8px}
+.lt-wrap .lbl{margin:0;white-space:nowrap}
+.lt-wrap select{flex:1;width:auto}
+@media (min-width:761px){.big-search .lt-wrap{flex:0 1 240px}}
+/* P2-6、P2-7 手機：點擊範圍至少 44px、字至少 14px（字級排版不動，只補 min-height／padding） */
+@media (max-width:760px){
+  .rtable td.main a,.wtable td:first-child a{display:inline-flex;align-items:center;min-height:var(--tap);min-width:var(--tap)}
+  .kv dd a{display:inline-flex;align-items:center;min-height:var(--tap);min-width:var(--tap)}
+  .foot a,.foot-nav a{min-width:var(--tap);justify-content:center;padding:0 6px}
+  .crumb a{min-width:var(--tap);justify-content:center;padding:0 4px}
+  .sortbtn{min-width:var(--tap);padding:0 4px}
+  .chip,.card-top,.card-note,.trust,label.lbl,.vs-lab small,.vs-brand,.sortbtn,.opt small,.rtable td::before,caption,.cmp{font-size:14px}
+}
