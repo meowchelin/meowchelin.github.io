@@ -292,6 +292,11 @@ th[aria-sort=ascending] .sortbtn::after{content:' ▲'}th[aria-sort=descending] 
 .chiprow .opt{white-space:nowrap;padding:6px 12px;font-size:15px}
 .chipsep{flex:none;width:2px;height:28px;background:var(--grey-300);border-radius:2px}
 .note.fold summary{cursor:pointer;font-weight:700;min-height:var(--tap);display:flex;align-items:center}
+.note.fold summary::after{content:"▸";margin-left:auto;padding-left:12px;font-size:18px;line-height:1}  /* 評審 20261030 E5：display:flex 讓瀏覽器原本的三角形不見，補一個 */
+.note.fold[open] summary::after{content:"▾"}
+/* 評審 20261030 E6：手機上營養表右邊的欄被切掉，表格上方提示可以左右滑；電腦放得下就不顯示 */
+.tblswipe{margin:0 0 6px;text-align:right;font-size:14px}
+@media (min-width:761px){.tblswipe{display:none}}
 .note.fold ul{margin:4px 0 8px;padding-left:20px}
 @media (min-width:761px){.chiprow{flex-wrap:wrap;overflow:visible;margin:0 0 8px;padding:0}.chiprow .opts{flex-wrap:wrap}}
 

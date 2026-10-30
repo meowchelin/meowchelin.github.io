@@ -1,6 +1,6 @@
 # 喵其林指南（MeowChelin）
 
-> 台灣貓糧的營養、申報與食安資料庫。收錄 143 款貓乾糧（其中 94 款算得出乾物比）、全台 63,234 筆貓食申報紀錄，以及台灣官方的檢驗不合格公告。每筆資料附原始網址與核對日期；不打分數、不推薦產品，也不收飼料廠商的錢。資料最後更新：2026-10-30 21:47（台北時間）。
+> 台灣貓糧的營養、申報與食安資料庫。收錄 143 款貓乾糧（其中 94 款算得出乾物比）、全台 63,234 筆貓食申報紀錄，以及台灣官方的檢驗不合格公告。每筆資料附原始網址與核對日期；不打分數、不推薦產品，也不收飼料廠商的錢。資料最後更新：2026-10-30 22:36（台北時間）。
 
 引用須知：營養數字取自品牌官網並換算成乾物比，尚未經獸醫師審核，不是醫療建議。「沒有不合格紀錄」只代表我們收錄的官方公告中沒有出現，不代表產品安全。
 
@@ -110,28 +110,28 @@
 - [法國皇家 E33 挑嘴成貓濃郁香味乾糧](https://meowchelin.github.io/brands/royal-canin/food-102/): 品牌官網沒有列出水分，尚無乾物比
 - [法國皇家 E35 挑嘴成貓絕佳口感乾糧](https://meowchelin.github.io/brands/royal-canin/food-103/): 品牌官網沒有列出水分，尚無乾物比
 - [法國皇家 E42 挑嘴成貓營養滿分乾糧](https://meowchelin.github.io/brands/royal-canin/food-104/): 品牌官網沒有列出水分，尚無乾物比
-- [室內成貓  11歲以上 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-105/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [室內成貓 7歲以上 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-106/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [室內成貓 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-107/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 室內成貓  11歲以上 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-105/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 室內成貓 7歲以上 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-106/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 室內成貓 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-107/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
 - [希爾思 幼貓 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-108/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [幼貓 敏感胃腸與皮膚 鮭魚與糙米特調食譜 | <p>希爾思寵物食品</p>](https://meowchelin.github.io/brands/hills/food-109/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 11歲以上 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-110/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 7歲以上 毛球控制 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-111/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 7歲以上 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-112/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 7歲以上 高齡活力 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-113/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 低卡 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-114/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 口腔保健 雞肉與糙米特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-115/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 完美消化 雞肉、大麥及全燕麥特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-116/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 完美消化 鮭魚、糙米及全燕麥特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-117/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 完美體重 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-118/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 敏感胃腸與皮膚 雞肉與米特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-119/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 敏感胃腸與皮膚 鮭魚與糙米特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-120/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 毛球控制 低卡 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-121/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 毛球控制 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-122/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 泌尿道毛球控制 雞肉與米特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-123/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 雞肉特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-124/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓 鮭魚與糙米特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-125/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
-- [成貓7歲以上 完美消化 雞肉、大麥及全燕麥特調食譜 | 希爾思寵物食品](https://meowchelin.github.io/brands/hills/food-126/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 幼貓 敏感胃腸與皮膚 鮭魚與糙米特調食譜](https://meowchelin.github.io/brands/hills/food-109/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 11歲以上 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-110/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 7歲以上 毛球控制 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-111/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 7歲以上 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-112/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 7歲以上 高齡活力 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-113/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 低卡 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-114/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 口腔保健 雞肉與糙米特調食譜](https://meowchelin.github.io/brands/hills/food-115/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 完美消化 雞肉、大麥及全燕麥特調食譜](https://meowchelin.github.io/brands/hills/food-116/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 完美消化 鮭魚、糙米及全燕麥特調食譜](https://meowchelin.github.io/brands/hills/food-117/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 完美體重 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-118/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 敏感胃腸與皮膚 雞肉與米特調食譜](https://meowchelin.github.io/brands/hills/food-119/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 敏感胃腸與皮膚 鮭魚與糙米特調食譜](https://meowchelin.github.io/brands/hills/food-120/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 毛球控制 低卡 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-121/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 毛球控制 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-122/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 泌尿道毛球控制 雞肉與米特調食譜](https://meowchelin.github.io/brands/hills/food-123/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 雞肉特調食譜](https://meowchelin.github.io/brands/hills/food-124/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓 鮭魚與糙米特調食譜](https://meowchelin.github.io/brands/hills/food-125/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
+- [希爾思 成貓7歲以上 完美消化 雞肉、大麥及全燕麥特調食譜](https://meowchelin.github.io/brands/hills/food-126/): 品牌官網只列乾物比，沒有水分、灰分，算不出碳水；下表先不列數字，尚無乾物比
 - [銀湯匙乾糧 雞肉鮪魚口味](https://meowchelin.github.io/brands/silver-spoon/food-127/): 乾物比蛋白質 36.67%、脂肪 17.78%、碳水（估算）33.33%、磷 0.89%
 - [銀湯匙乾糧 鮭魚鮪魚口味](https://meowchelin.github.io/brands/silver-spoon/food-128/): 乾物比蛋白質 36.67%、脂肪 17.78%、碳水（估算）33.33%、磷 0.89%
 - [銀湯匙乾糧 羊肉鮪魚口味](https://meowchelin.github.io/brands/silver-spoon/food-129/): 乾物比蛋白質 36.67%、脂肪 17.78%、碳水（估算）33.33%、磷 0.89%
@@ -141,14 +141,14 @@
 - [銀湯匙乾糧 鮭魚鮪魚口味 大容量](https://meowchelin.github.io/brands/silver-spoon/food-133/): 乾物比蛋白質 36.67%、脂肪 17.78%、碳水（估算）33.33%、磷 0.89%
 - [【奇境】無穀成貓糧｜澳洲牛肉1.8kg](https://meowchelin.github.io/brands/trilogy/food-134/): 乾物比蛋白質 41.11%、脂肪 17.78%、碳水（估算）23.33%、磷 0.56%
 - [【奇境】無穀成貓糧｜澳洲鮭魚1.8kg](https://meowchelin.github.io/brands/trilogy/food-135/): 乾物比蛋白質 41.11%、脂肪 17.78%、碳水（估算）23.33%、磷 0.56%
-- [野性魅力 超能精華鮮雞貓 - CHARM® Pet Food (TW/HK)](https://meowchelin.github.io/brands/charm/food-136/): 乾物比蛋白質 45.56%、脂肪 22.22%、碳水（估算）18.89%、磷 1.56%
-- [野性魅力 超能精華羊肉貓 - CHARM® Pet Food (TW/HK)](https://meowchelin.github.io/brands/charm/food-137/): 乾物比蛋白質 42.22%、脂肪 17.78%、碳水（估算）26.22%、磷 1.67%
-- [野性魅力 超能精華鮮鴨貓 - CHARM® Pet Food (TW/HK)](https://meowchelin.github.io/brands/charm/food-138/): 乾物比蛋白質 44.44%、脂肪 20%、碳水（估算）22.22%、磷 1.67%
-- [野性魅力 超能精華海洋魚貓 - CHARM® Pet Food (TW/HK)](https://meowchelin.github.io/brands/charm/food-139/): 乾物比蛋白質 42.22%、脂肪 20%、碳水（估算）24.22%、磷 1.44%
-- [野性魅力 幼貓配方 - CHARM® Pet Food (TW/HK)](https://meowchelin.github.io/brands/charm/food-140/): 乾物比蛋白質 42.22%、脂肪 20%、碳水（估算）22.22%、磷 1.11%
-- [野性魅力 成貓配方 - CHARM® Pet Fod (TW/HK)](https://meowchelin.github.io/brands/charm/food-141/): 乾物比蛋白質 42.22%、脂肪 22.22%、碳水（估算）20.56%、磷 1.11%
-- [野性魅力 羊肉鮭魚配方貓 - CHARM® Pet Food (TW/HK)](https://meowchelin.github.io/brands/charm/food-142/): 乾物比蛋白質 42.22%、脂肪 20%、碳水（估算）22.78%、磷 1.11%
-- [野性魅力 海陸龍蝦盛宴貓 - CHARM® Pet Food (TW/HK)](https://meowchelin.github.io/brands/charm/food-143/): 乾物比蛋白質 42.22%、脂肪 22.22%、碳水（估算）20.56%、磷 1.11%
+- [野性魅力 超能精華鮮雞貓](https://meowchelin.github.io/brands/charm/food-136/): 乾物比蛋白質 45.56%、脂肪 22.22%、碳水（估算）18.89%、磷 1.56%
+- [野性魅力 超能精華羊肉貓](https://meowchelin.github.io/brands/charm/food-137/): 乾物比蛋白質 42.22%、脂肪 17.78%、碳水（估算）26.22%、磷 1.67%
+- [野性魅力 超能精華鮮鴨貓](https://meowchelin.github.io/brands/charm/food-138/): 乾物比蛋白質 44.44%、脂肪 20%、碳水（估算）22.22%、磷 1.67%
+- [野性魅力 超能精華海洋魚貓](https://meowchelin.github.io/brands/charm/food-139/): 乾物比蛋白質 42.22%、脂肪 20%、碳水（估算）24.22%、磷 1.44%
+- [野性魅力 幼貓配方](https://meowchelin.github.io/brands/charm/food-140/): 乾物比蛋白質 42.22%、脂肪 20%、碳水（估算）22.22%、磷 1.11%
+- [野性魅力 成貓配方](https://meowchelin.github.io/brands/charm/food-141/): 乾物比蛋白質 42.22%、脂肪 22.22%、碳水（估算）20.56%、磷 1.11%
+- [野性魅力 羊肉鮭魚配方貓](https://meowchelin.github.io/brands/charm/food-142/): 乾物比蛋白質 42.22%、脂肪 20%、碳水（估算）22.78%、磷 1.11%
+- [野性魅力 海陸龍蝦盛宴貓](https://meowchelin.github.io/brands/charm/food-143/): 乾物比蛋白質 42.22%、脂肪 22.22%、碳水（估算）20.56%、磷 1.11%
 - [貓乾糧磷含量一覽（依磷由低到高，乾物比；不標低磷）](https://meowchelin.github.io/conditions/low-phosphorus/)
 - [貓乾糧脂肪含量一覽（依脂肪由低到高，乾物比；不標低脂）](https://meowchelin.github.io/conditions/low-fat/)
 - [品名寫泌尿的貓乾糧](https://meowchelin.github.io/conditions/urinary/)
