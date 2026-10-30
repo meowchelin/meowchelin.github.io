@@ -1,6 +1,6 @@
 # 喵其林指南（MeowChelin）
 
-> 台灣貓糧的營養、申報與食安資料庫。收錄 143 款貓乾糧（其中 94 款算得出乾物比）、全台 63,186 筆貓食申報紀錄，以及台灣官方的檢驗不合格公告。每筆資料附原始網址與核對日期；不打分數、不推薦產品，也不收飼料廠商的錢。資料最後更新：2026-10-29 09:10（台北時間）。
+> 台灣貓糧的營養、申報與食安資料庫。收錄 143 款貓乾糧（其中 94 款算得出乾物比）、全台 63,234 筆貓食申報紀錄，以及台灣官方的檢驗不合格公告。每筆資料附原始網址與核對日期；不打分數、不推薦產品，也不收飼料廠商的錢。資料最後更新：2026-10-30 21:47（台北時間）。
 
 引用須知：營養數字取自品牌官網並換算成乾物比，尚未經獸醫師審核，不是醫療建議。「沒有不合格紀錄」只代表我們收錄的官方公告中沒有出現，不代表產品安全。
 
@@ -174,7 +174,7 @@
 - [銀湯匙](https://meowchelin.github.io/brands/silver-spoon/): 國外品牌，Unicharm Corporation（台灣：嬌聯股份有限公司）；申報貓乾糧 18 筆，申報產地 泰國 16 筆、日本 1 筆
 - [特百滋](https://meowchelin.github.io/brands/tapazo/): 台灣品牌，艾澌克 ISCO；申報貓乾糧 25 筆，申報產地 台灣 25 筆
 - [優格](https://meowchelin.github.io/brands/toma-pro/): 台灣品牌，艾澌克 ISCO；申報貓乾糧 55 筆，申報產地 美國 28 筆、加拿大 15 筆
-- [奇境](https://meowchelin.github.io/brands/trilogy/): 國外品牌，Real Pet Food Company（澳洲；台灣代理：維逸有限公司）；申報貓乾糧 35 筆，申報產地 澳大利亞(澳洲) 35 筆
+- [奇境](https://meowchelin.github.io/brands/trilogy/): 國外品牌，Real Pet Food Company（澳洲；台灣代理：維逸有限公司）；申報貓乾糧 34 筆，申報產地 澳大利亞(澳洲) 34 筆
 - [偉嘉](https://meowchelin.github.io/brands/whiskas/): 國外品牌，Mars（美國）；申報貓乾糧 61 筆，申報產地 泰國 61 筆
 - [多納](https://meowchelin.github.io/brands/duo-na/): 台灣品牌，寶榮寵物企業；申報貓乾糧 8 筆，申報產地 台灣 8 筆
 - [毛孩時代](https://meowchelin.github.io/brands/mao-hai-shi-dai/): 台灣品牌，騰勢股份有限公司；申報貓乾糧 5 筆，申報產地 台灣 5 筆
@@ -183,7 +183,7 @@
 
 ## 食安
 - [看食安](https://meowchelin.github.io/recalls/): 貓食檢驗不合格與召回紀錄總覽；目前收錄台灣
-- [台灣貓食檢驗不合格紀錄](https://meowchelin.github.io/recalls/tw/): 36 筆，每筆有獨立頁面
+- [台灣貓食檢驗不合格紀錄](https://meowchelin.github.io/recalls/tw/): 37 筆，每筆有獨立頁面
 - [事件 JSON](https://meowchelin.github.io/data/events.json): 同上，含原文、日期、廠商、處置、來源網址
 - [事件 CSV](https://meowchelin.github.io/data/events.csv): 同上，CSV 格式
 
