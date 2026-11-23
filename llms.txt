@@ -1,6 +1,6 @@
 # 喵其林指南（MeowChelin）
 
-> 台灣貓糧的營養、申報與食安資料庫。收錄 143 款貓乾糧（其中 94 款算得出乾物比）、全台 63,339 筆貓食申報紀錄，以及台灣官方的檢驗不合格公告。每筆資料附原始網址與核對日期；不打分數、不推薦產品，也不收飼料廠商的錢。資料最後更新：2026-11-06 09:05（台北時間）。
+> 台灣貓糧的營養、申報與食安資料庫。收錄 143 款貓乾糧（其中 94 款算得出乾物比）、全台 63,765 筆貓食申報紀錄，以及台灣官方的檢驗不合格公告。每筆資料附原始網址與核對日期；不打分數、不推薦產品，也不收飼料廠商的錢。資料最後更新：2026-11-22 14:54（台北時間）。
 
 引用須知：營養數字取自品牌官網並換算成乾物比，尚未經獸醫師審核，不是醫療建議。「沒有不合格紀錄」只代表我們收錄的官方公告中沒有出現，不代表產品安全。
 
@@ -159,17 +159,17 @@
 - [愛肯拿](https://meowchelin.github.io/brands/acana/): 國外品牌，Champion Petfoods，屬 Mars；申報貓乾糧 34 筆，申報產地 加拿大 34 筆
 - [博朗氏](https://meowchelin.github.io/brands/balance/): 台灣品牌，寶榮寵物企業；申報貓乾糧 10 筆，申報產地 台灣 10 筆
 - [野性魅力](https://meowchelin.github.io/brands/charm/): 國外品牌，CHARM PET FOOD CANADA INC.；申報貓乾糧 34 筆，申報產地 加拿大 34 筆
-- [法米納](https://meowchelin.github.io/brands/farmina/): 國外品牌，Farmina Pet Foods（義大利）；申報貓乾糧 84 筆，申報產地 義大利 82 筆、台灣 2 筆
+- [法米納](https://meowchelin.github.io/brands/farmina/): 國外品牌，Farmina Pet Foods（義大利）；申報貓乾糧 160 筆，申報產地 義大利 158 筆、台灣 2 筆
 - [福壽](https://meowchelin.github.io/brands/fuso-pets/): 台灣品牌，福壽實業；申報貓乾糧 25 筆，申報產地 台灣 25 筆
 - [HALO 嘿囉](https://meowchelin.github.io/brands/halo/): 國外品牌，美國 Halo, Purely for Pets，母公司 Better Choice Company（已與 SRx Health Solutions 合併）；Halo 的亞洲業務 2025 年賣給 CZC Company LTD；申報貓乾糧 10 筆，申報產地 美國 10 筆
-- [希爾思](https://meowchelin.github.io/brands/hills/): 國外品牌，Hill's Pet Nutrition, Inc.（台灣：台灣希爾思寵物營養品有限公司）；申報貓乾糧 249 筆，申報產地 美國 240 筆、台灣 9 筆
+- [希爾思](https://meowchelin.github.io/brands/hills/): 國外品牌，Hill's Pet Nutrition, Inc.（台灣：台灣希爾思寵物營養品有限公司）；申報貓乾糧 252 筆，申報產地 美國 243 筆、台灣 9 筆
 - [IQ CAT](https://meowchelin.github.io/brands/iq-cat/): 國外品牌，好侶 PCG 集團，卜蜂旗下（泰國）；申報貓乾糧 12 筆，申報產地 泰國 12 筆
 - [怪獸部落](https://meowchelin.github.io/brands/litomon/): 台灣品牌，怪獸製造有限公司；申報貓乾糧 44 筆，申報產地 台灣 36 筆、紐西蘭 8 筆
 - [瑪恩吉](https://meowchelin.github.io/brands/monge/): 國外品牌，Monge & C. S.p.A.（義大利）；申報貓乾糧 47 筆，申報產地 義大利 47 筆
 - [紐頓](https://meowchelin.github.io/brands/nutram/): 國外品牌，Elmira Pet Products（加拿大）；申報貓乾糧 38 筆，申報產地 加拿大 35 筆、台灣 3 筆
 - [歐睿健](https://meowchelin.github.io/brands/orijen/): 國外品牌，Champion Petfoods，屬 Mars；申報貓乾糧 60 筆，申報產地 加拿大 58 筆、台灣 2 筆
 - [冠能](https://meowchelin.github.io/brands/pro-plan/): 國外品牌，Nestlé（瑞士）；申報貓乾糧 104 筆，申報產地 澳大利亞(澳洲) 54 筆、美國 47 筆
-- [瑞威](https://meowchelin.github.io/brands/real-power/): 台灣品牌，瑞威動物科技；申報貓乾糧 25 筆，申報產地 台灣 25 筆
+- [瑞威](https://meowchelin.github.io/brands/real-power/): 台灣品牌，瑞威動物科技；申報貓乾糧 47 筆，申報產地 台灣 47 筆
 - [法國皇家](https://meowchelin.github.io/brands/royal-canin/): 國外品牌，Mars（美國）；品牌本部在法國；申報貓乾糧 316 筆，申報產地 法國 227 筆、韓國 71 筆
 - [銀湯匙](https://meowchelin.github.io/brands/silver-spoon/): 國外品牌，Unicharm Corporation（台灣：嬌聯股份有限公司）；申報貓乾糧 18 筆，申報產地 泰國 16 筆、日本 1 筆
 - [特百滋](https://meowchelin.github.io/brands/tapazo/): 台灣品牌，艾澌克 ISCO；申報貓乾糧 25 筆，申報產地 台灣 25 筆
